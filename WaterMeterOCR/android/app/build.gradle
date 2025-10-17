@@ -9,6 +9,7 @@ plugins {
  * By default you don't need to apply any configuration, just uncomment the lines you need.
  */
 react {
+    autolinkLibrariesWithApp()
     /* Folders */
     //   The root of your project, i.e. where "package.json" lives. Default is '..'
     // root = file("../")
@@ -58,33 +59,29 @@ react {
  */
 def enableProguardInReleaseBuilds = false
 
-/**
- * The preferred build flavor of JavaScriptCore (JSC)
- *
- * For example, to use the international variant, you can use:
- * `def jscFlavor = 'org.webkit:android-jsc-intl:+'`
- *
- * The international variant includes ICU i18n library and necessary data
- * allowing to use e.g. `Date.toLocaleString` and `String.localeCompare` that
- * give correct results when using with locales other than en-US. Note that
- * this variant is about 6MiB larger per architecture than default.
- */
-def jscFlavor = 'org.webkit:android-jsc:+'
-
 android {
-    ndkVersion rootProject.ext.ndkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
-    compileSdk rootProject.ext.compileSdkVersion
-
     namespace "com.watermeterocr"
+    compileSdk 31
+
     defaultConfig {
         applicationId "com.watermeterocr"
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
+        minSdk 24
+        targetSdk 31
         versionCode 1
         versionName "1.0"
-        missingDimensionStrategy 'react-native-camera', 'general'
     }
+    
+    flavorDimensions "react-native-camera"
+    
+    productFlavors {
+        general {
+            dimension "react-native-camera"
+        }
+        mlkit {
+            dimension "react-native-camera"
+        }
+    }
+    
     signingConfigs {
         debug {
             storeFile file('debug.keystore')
@@ -102,8 +99,12 @@ android {
             // see https://reactnative.dev/docs/signed-apk-android.
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
-            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
+    }
+
+    buildFeatures {
+        buildConfig true
     }
 }
 
@@ -113,11 +114,14 @@ dependencies {
 
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")
-    } else {
-        implementation jscFlavor
     }
 
     implementation("com.google.mlkit:text-recognition:16.0.0")
+    
+    // Native modules
+    implementation(project(":react-native-ml-kit_text-recognition"))
+    implementation(project(":react-native-camera"))
+    implementation(project(":react-native-safe-area-context"))
+    implementation(project(":react-native-screens"))
+    implementation(project(":react-native-svg"))
 }
-
-apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)

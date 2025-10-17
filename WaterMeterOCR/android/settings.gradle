@@ -1,7 +1,40 @@
-rootProject.name = 'WaterMeterOCR'
+pluginManagement {
+  includeBuild("../node_modules/@react-native/gradle-plugin")
+  repositories {
+    google()
+    mavenCentral()
+    gradlePluginPortal()
+  }
+}
 
-apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle")
-applyNativeModulesSettingsGradle(settings)
+plugins {
+  id("com.facebook.react.settings")
+}
 
-include ':app'
-includeBuild('../node_modules/@react-native/gradle-plugin')
+dependencyResolutionManagement {
+  repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+  repositories {
+    google()
+    mavenCentral()
+  }
+}
+
+rootProject.name = "GazOCR"
+
+include(":app")
+
+// Include native modules
+include(":react-native-ml-kit_text-recognition")
+project(":react-native-ml-kit_text-recognition").projectDir = new File(rootDir, "../node_modules/@react-native-ml-kit/text-recognition/android")
+
+include(":react-native-camera")
+project(":react-native-camera").projectDir = new File(rootDir, "../node_modules/react-native-camera/android")
+
+include(":react-native-safe-area-context")
+project(":react-native-safe-area-context").projectDir = new File(rootDir, "../node_modules/react-native-safe-area-context/android")
+
+include(":react-native-screens")
+project(":react-native-screens").projectDir = new File(rootDir, "../node_modules/react-native-screens/android")
+
+include(":react-native-svg")
+project(":react-native-svg").projectDir = new File(rootDir, "../node_modules/react-native-svg/android")
