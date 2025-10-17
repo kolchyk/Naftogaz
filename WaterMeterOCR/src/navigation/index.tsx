@@ -2,11 +2,11 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import HomeScreen from '../screens/HomeScreen';
-import CameraScreen from '../screens/CameraScreen';
+import HomeScreen from '@/screens/HomeScreen';
+import CameraScreen from '@/screens/CameraScreen';
 
 export type RootStackParamList = {
-  Home: {recognizedValue?: string} | undefined;
+  Home: {recognizedValue?: string; photoUri?: string} | undefined;
   Camera: undefined;
 };
 

@@ -1,17 +1,27 @@
 export const palette = {
-  navy: '#051c43',
-  blue: '#00a0df',
-  sky: '#7ab8e1',
   white: '#ffffff',
-  light: '#d0e5f7',
-  dark: '#000000',
+  offWhite: '#f5f7fb',
+  orange: '#ff7a00',
+  orangeDark: '#f06700',
+  charcoal: '#1f2a37',
+  slate: '#4f5a6b',
+  gray: '#94a0b8',
+  border: '#e2e8f0',
+  success: '#16a34a',
+  error: '#ef4444',
 };
 
 export const theme = {
-  background: palette.navy,
-  accent: palette.blue,
-  textPrimary: palette.white,
-  textSecondary: palette.sky,
-  textMuted: palette.light,
+  background: palette.offWhite,
+  surface: palette.white,
+  accent: palette.orange,
+  accentPressed: palette.orangeDark,
+  textPrimary: palette.charcoal,
+  textSecondary: palette.slate,
+  textMuted: palette.gray,
+  border: palette.border,
+  onAccent: palette.white,
+  statusSuccess: palette.success,
+  statusError: palette.error,
 };
 

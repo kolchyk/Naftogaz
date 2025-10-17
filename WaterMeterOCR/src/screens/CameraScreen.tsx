@@ -13,7 +13,8 @@ import type {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {RNCamera, type TakePictureResponse} from 'react-native-camera';
 import TextRecognition from '@react-native-ml-kit/text-recognition';
 
-import type {RootStackParamList} from '../navigation';
+import {theme} from '@/theme/colors';
+import type {RootStackParamList} from '@/navigation';
 
 const requestPermissions = async () => {
   if (Platform.OS !== 'android') {
@@ -84,6 +85,7 @@ const CameraScreen: React.FC = () => {
 
       navigation.navigate('Home', {
         recognizedValue: reading,
+        photoUri: photo.uri,
       });
     } catch (error) {
       console.error('Failed to process image', error);
@@ -165,7 +167,7 @@ const styles = StyleSheet.create({
     right: 0,
     paddingVertical: 32,
     paddingHorizontal: 24,
-    backgroundColor: '#051c43CC',
+    backgroundColor: 'rgba(31, 42, 55, 0.92)',
   },
   overlayTitle: {
     color: '#ffffff',
@@ -175,7 +177,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   overlayHint: {
-    color: '#d0e5f7',
+    color: '#dbe3f4',
     fontSize: 14,
     textAlign: 'center',
     marginBottom: 24,
@@ -184,13 +186,13 @@ const styles = StyleSheet.create({
   focusFrame: {
     height: 180,
     borderWidth: 2,
-    borderColor: '#00a0df',
+    borderColor: theme.accent,
     borderRadius: 12,
     marginHorizontal: 20,
     marginBottom: 24,
   },
   captureButton: {
-    backgroundColor: '#00a0df',
+    backgroundColor: theme.accent,
     borderRadius: 28,
     alignSelf: 'center',
     paddingVertical: 14,
@@ -201,7 +203,7 @@ const styles = StyleSheet.create({
     opacity: 0.6,
   },
   captureText: {
-    color: '#ffffff',
+    color: theme.onAccent,
     fontSize: 16,
     fontWeight: '600',
   },
@@ -209,7 +211,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   cancelText: {
-    color: '#7ab8e1',
+    color: theme.background,
     fontSize: 15,
     fontWeight: '500',
   },
@@ -217,7 +219,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#051c43',
+    backgroundColor: theme.background,
     padding: 24,
   },
   deniedText: {
