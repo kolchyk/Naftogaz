@@ -37,7 +37,13 @@ class MainApplication : Application(), ReactApplication {
     SoLoader.init(this, false)
     if (BuildConfig.IS_NEW_ARCHITECTURE_ENABLED) {
       // If you opted-in for the New Architecture, we load the native entry point for this app.
-      load()
+      try {
+        load()
+      } catch (e: Throwable) {
+        // Handle the case where the native library is not available
+        // For example, log the error or show a user-friendly message
+        e.printStackTrace()
+      }
     }
   }
 }

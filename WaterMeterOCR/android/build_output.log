@@ -1,0 +1,2128 @@
+Initialized native services in: /Users/serhii/.gradle/native
+Initialized jansi services in: /Users/serhii/.gradle/native
+Found daemon DaemonInfo{pid=52548, address=[d4547671-29da-4e9c-8e6a-a9a5cac1cd62 port:55479, addresses:[/127.0.0.1]], state=Idle, lastBusy=1760785365442, context=DefaultDaemonContext[uid=18912ab6-94f5-4791-aba2-3d1bdffa1f97,javaHome=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home,javaVersion=17,javaVendor=Eclipse Adoptium,daemonRegistryDir=/Users/serhii/.gradle/daemon,pid=52548,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=UA,-Duser.language=ru,-Duser.variant]} however its context does not match the desired criteria.
+At least one daemon option is different.
+Wanted: DaemonRequestContext{jvmCriteria=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home (no JDK specified, using current Java home), daemonOpts=[-XX:MaxMetaspaceSize=1024m, -Xmx4096m, -Dfile.encoding=UTF-8, -Duser.country=UA, -Duser.language=ru, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=18912ab6-94f5-4791-aba2-3d1bdffa1f97,javaHome=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home,javaVersion=17,javaVendor=Eclipse Adoptium,daemonRegistryDir=/Users/serhii/.gradle/daemon,pid=52548,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=UA,-Duser.language=ru,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 58450). The daemon log file: /Users/serhii/.gradle/daemon/8.13/daemon-58450.out.log
+Starting 13th build in daemon [uptime: 3 hrs 1 mins 52.307 secs, performance: 100%, GC rate: 0.00/s, heap usage: 4% of 4 GiB, non-heap usage: 30% of 1 GiB]
+Using 12 worker leases.
+Now considering [/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android, /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/@react-native/gradle-plugin] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Now considering [/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/@react-native/gradle-plugin, /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android] as hierarchies to watch
+Resolved plugin [id: 'org.gradle.toolchains.foojay-resolver-convention', version: '0.5.0']
+
+> Configure project :gradle-plugin
+Evaluating project ':gradle-plugin' using build file '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/@react-native/gradle-plugin/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.1.20', apply: false]
+Resolved plugin [id: 'com.ncorti.ktfmt.gradle', version: '0.22.0']
+
+> Configure project :gradle-plugin:react-native-gradle-plugin
+Evaluating project ':gradle-plugin:react-native-gradle-plugin' using build file '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/@react-native/gradle-plugin/react-native-gradle-plugin/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.1.20']
+Resolved plugin [id: 'com.ncorti.ktfmt.gradle', version: '0.22.0']
+Resolved plugin [id: 'java-gradle-plugin']
+Build df44616e-96b6-4e80-aab3-0ff0dcee20d7 is started
+Using Kotlin Gradle Plugin gradle85 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :gradle-plugin:settings-plugin
+Evaluating project ':gradle-plugin:settings-plugin' using build file '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/@react-native/gradle-plugin/settings-plugin/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.1.20']
+Resolved plugin [id: 'com.ncorti.ktfmt.gradle', version: '0.22.0']
+Resolved plugin [id: 'java-gradle-plugin']
+Using Kotlin Gradle Plugin gradle85 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :gradle-plugin:shared
+Evaluating project ':gradle-plugin:shared' using build file '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/@react-native/gradle-plugin/shared/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.1.20']
+Resolved plugin [id: 'com.ncorti.ktfmt.gradle', version: '0.22.0']
+Using Kotlin Gradle Plugin gradle85 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :gradle-plugin:shared-testutil
+Evaluating project ':gradle-plugin:shared-testutil' using build file '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/@react-native/gradle-plugin/shared-testutil/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.1.20']
+Resolved plugin [id: 'com.ncorti.ktfmt.gradle', version: '0.22.0']
+Using Kotlin Gradle Plugin gradle85 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+Resolved plugin [id: 'com.facebook.react.settings']
+Starting process 'command '/usr/libexec/java_home''. Working directory: /Users/serhii/.gradle/daemon/8.13 Command: /usr/libexec/java_home -V
+Successfully started process 'command '/usr/libexec/java_home''
+Resolve mutations for :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker,5,main]) started.
+:gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 9,5,main]) started.
+:gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :gradle-plugin:shared:compileKotlin (Thread[Execution worker Thread 9,5,main]) started.
+:gradle-plugin:shared:compileKotlin (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+Caching disabled for task ':gradle-plugin:shared:compileKotlin' because:
+  Build cache is disabled
+Skipping task ':gradle-plugin:shared:compileKotlin' as it is up-to-date.
+Resolve mutations for :gradle-plugin:shared:compileJava (Thread[Execution worker Thread 9,5,main]) started.
+:gradle-plugin:shared:compileJava (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+Skipping task ':gradle-plugin:shared:compileJava' as it has no source files and no previous output files.
+Resolve mutations for :gradle-plugin:shared:processResources (Thread[Execution worker Thread 9,5,main]) started.
+:gradle-plugin:shared:processResources (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+Skipping task ':gradle-plugin:shared:processResources' as it has no source files and no previous output files.
+Resolve mutations for :gradle-plugin:shared:classes (Thread[Execution worker Thread 9,5,main]) started.
+:gradle-plugin:shared:classes (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+Skipping task ':gradle-plugin:shared:classes' as it has no actions.
+Resolve mutations for :gradle-plugin:shared:jar (Thread[Execution worker Thread 4,5,main]) started.
+:gradle-plugin:shared:jar (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+Caching disabled for task ':gradle-plugin:shared:jar' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle-plugin:shared:jar' as it is up-to-date.
+work action resolve shared.jar (project :gradle-plugin:shared) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :gradle-plugin:settings-plugin:compileKotlin (Thread[Execution worker Thread 4,5,main]) started.
+:gradle-plugin:settings-plugin:compileKotlin (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :gradle-plugin:settings-plugin:compileKotlin UP-TO-DATE
+Caching disabled for task ':gradle-plugin:settings-plugin:compileKotlin' because:
+  Build cache is disabled
+Skipping task ':gradle-plugin:settings-plugin:compileKotlin' as it is up-to-date.
+Resolve mutations for :gradle-plugin:settings-plugin:compileJava (Thread[Execution worker Thread 4,5,main]) started.
+:gradle-plugin:settings-plugin:compileJava (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+Skipping task ':gradle-plugin:settings-plugin:compileJava' as it has no source files and no previous output files.
+Resolve mutations for :gradle-plugin:settings-plugin:pluginDescriptors (Thread[Execution worker Thread 4,5,main]) started.
+:gradle-plugin:settings-plugin:pluginDescriptors (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :gradle-plugin:settings-plugin:pluginDescriptors UP-TO-DATE
+Caching disabled for task ':gradle-plugin:settings-plugin:pluginDescriptors' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle-plugin:settings-plugin:pluginDescriptors' as it is up-to-date.
+Resolve mutations for :gradle-plugin:settings-plugin:processResources (Thread[Execution worker Thread 4,5,main]) started.
+:gradle-plugin:settings-plugin:processResources (Thread[Execution worker Thread 8,5,main]) started.
+
+> Task :gradle-plugin:settings-plugin:processResources UP-TO-DATE
+Caching disabled for task ':gradle-plugin:settings-plugin:processResources' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle-plugin:settings-plugin:processResources' as it is up-to-date.
+Resolve mutations for :gradle-plugin:settings-plugin:classes (Thread[Execution worker Thread 8,5,main]) started.
+:gradle-plugin:settings-plugin:classes (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :gradle-plugin:settings-plugin:classes UP-TO-DATE
+Skipping task ':gradle-plugin:settings-plugin:classes' as it has no actions.
+Resolve mutations for :gradle-plugin:settings-plugin:jar (Thread[Execution worker Thread 9,5,main]) started.
+:gradle-plugin:settings-plugin:jar (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :gradle-plugin:settings-plugin:jar UP-TO-DATE
+Caching disabled for task ':gradle-plugin:settings-plugin:jar' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle-plugin:settings-plugin:jar' as it is up-to-date.
+Settings evaluated using settings file '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/settings.gradle'.
+Projects loaded. Root project using build file '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/build.gradle'.
+Included projects: [root project 'GazOCR', project ':app', project ':react-native-camera', project ':react-native-ml-kit_text-recognition', project ':react-native-safe-area-context', project ':react-native-screens', project ':react-native-svg']
+
+> Configure project :
+Evaluating root project 'GazOCR' using build file '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/build.gradle'.
+Resolved plugin [id: 'com.android.application', version: '8.1.0', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.1.0', apply: false]
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 11,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:compileKotlin (Thread[Execution worker Thread 11,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:compileKotlin (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin UP-TO-DATE
+Caching disabled for task ':gradle-plugin:react-native-gradle-plugin:compileKotlin' because:
+  Build cache is disabled
+Skipping task ':gradle-plugin:react-native-gradle-plugin:compileKotlin' as it is up-to-date.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:compileJava (Thread[Execution worker Thread 11,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:compileJava (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+Skipping task ':gradle-plugin:react-native-gradle-plugin:compileJava' as it has no source files and no previous output files.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:pluginDescriptors (Thread[Execution worker Thread 11,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:pluginDescriptors (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+Caching disabled for task ':gradle-plugin:react-native-gradle-plugin:pluginDescriptors' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle-plugin:react-native-gradle-plugin:pluginDescriptors' as it is up-to-date.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:processResources (Thread[Execution worker Thread 11,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:processResources (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :gradle-plugin:react-native-gradle-plugin:processResources UP-TO-DATE
+Caching disabled for task ':gradle-plugin:react-native-gradle-plugin:processResources' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle-plugin:react-native-gradle-plugin:processResources' as it is up-to-date.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:classes (Thread[Execution worker Thread 11,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:classes (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :gradle-plugin:react-native-gradle-plugin:classes UP-TO-DATE
+Skipping task ':gradle-plugin:react-native-gradle-plugin:classes' as it has no actions.
+Resolve mutations for :gradle-plugin:react-native-gradle-plugin:jar (Thread[Execution worker Thread 11,5,main]) started.
+:gradle-plugin:react-native-gradle-plugin:jar (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :gradle-plugin:react-native-gradle-plugin:jar UP-TO-DATE
+Caching disabled for task ':gradle-plugin:react-native-gradle-plugin:jar' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':gradle-plugin:react-native-gradle-plugin:jar' as it is up-to-date.
+
+> Configure project :app
+Evaluating project ':app' using build file '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/build.gradle'.
+Resolved plugin [id: 'com.android.application']
+Resolved plugin [id: 'org.jetbrains.kotlin.android']
+Resolved plugin [id: 'com.facebook.react']
+Ignoring listeners of task graph ready event, as this build (:gradle-plugin) has already executed work.
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+
+> Configure project :react-native-camera
+Evaluating project ':react-native-camera' using build file '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-camera/android/build.gradle'.
+Using default execution profile
+
+> Configure project :react-native-ml-kit_text-recognition
+Evaluating project ':react-native-ml-kit_text-recognition' using build file '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/@react-native-ml-kit/text-recognition/android/build.gradle'.
+Using default execution profile
+
+> Configure project :react-native-safe-area-context
+Evaluating project ':react-native-safe-area-context' using build file '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-safe-area-context/android/build.gradle'.
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+
+> Configure project :react-native-screens
+Evaluating project ':react-native-screens' using build file '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/build.gradle'.
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+C/C++: android.ndkVersion from module build.gradle is [26.0.10792818]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is /Users/serhii/Library/Android/sdk
+
+> Configure project :react-native-svg
+Evaluating project ':react-native-svg' using build file '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-svg/android/build.gradle'.
+Using default execution profile
+Starting process 'command 'node''. Working directory: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android Command: node --print require.resolve('react-native/package.json')
+Successfully started process 'command 'node''
+Starting process 'command 'node''. Working directory: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android Command: node --print require.resolve('react-native/package.json')
+Successfully started process 'command 'node''
+All projects evaluated.
+Abbreviated task name 'buildMlkitDebug' matched 'buildMlkitDebugOptimizedPreBundle'
+Selected primary task 'buildMlkitDebug' from project :
+Starting process 'command '/usr/libexec/java_home''. Working directory: /Users/serhii/.gradle/daemon/8.13 Command: /usr/libexec/java_home -V
+Successfully started process 'command '/usr/libexec/java_home''
+Tasks to be executed: [task ':app:createBundleMlkitDebugOptimizedJsAndAssets', task ':app:generateAutolinkingNewArchitectureFiles', task ':app:generateAutolinkingPackageList', task ':app:generateCodegenSchemaFromJavaScript', task ':app:generateCodegenArtifactsFromSchema', task ':app:generateReactNativeEntryPoint', task ':app:preBuild', task ':app:preMlkitDebugOptimizedBuild', task ':app:generateMlkitDebugOptimizedResValues', task ':react-native-camera:preBuild', task ':react-native-camera:preMlkitReleaseBuild', task ':react-native-camera:generateMlkitReleaseResValues', task ':react-native-camera:generateMlkitReleaseResources', task ':react-native-camera:packageMlkitReleaseResources', task ':react-native-ml-kit_text-recognition:preBuild', task ':react-native-ml-kit_text-recognition:preReleaseBuild', task ':react-native-ml-kit_text-recognition:generateReleaseResValues', task ':react-native-ml-kit_text-recognition:generateReleaseResources', task ':react-native-ml-kit_text-recognition:packageReleaseResources', task ':react-native-safe-area-context:preBuild', task ':react-native-safe-area-context:preReleaseBuild', task ':react-native-safe-area-context:generateReleaseResValues', task ':react-native-safe-area-context:generateReleaseResources', task ':react-native-safe-area-context:packageReleaseResources', task ':react-native-screens:preBuild', task ':react-native-screens:preReleaseBuild', task ':react-native-screens:generateReleaseResValues', task ':react-native-screens:generateReleaseResources', task ':react-native-screens:packageReleaseResources', task ':react-native-svg:preBuild', task ':react-native-svg:preReleaseBuild', task ':react-native-svg:generateReleaseResValues', task ':react-native-svg:generateReleaseResources', task ':react-native-svg:packageReleaseResources', task ':app:mapMlkitDebugOptimizedSourceSetPaths', task ':app:generateMlkitDebugOptimizedResources', task ':app:mergeMlkitDebugOptimizedResources', task ':app:createMlkitDebugOptimizedCompatibleScreenManifests', task ':app:extractDeepLinksMlkitDebugOptimized', task ':react-native-camera:extractDeepLinksMlkitRelease', task ':react-native-camera:processMlkitReleaseManifest', task ':react-native-ml-kit_text-recognition:extractDeepLinksRelease', task ':react-native-ml-kit_text-recognition:processReleaseManifest', task ':react-native-safe-area-context:extractDeepLinksRelease', task ':react-native-safe-area-context:processReleaseManifest', task ':react-native-screens:extractDeepLinksRelease', task ':react-native-screens:processReleaseManifest', task ':react-native-svg:extractDeepLinksRelease', task ':react-native-svg:processReleaseManifest', task ':app:processMlkitDebugOptimizedMainManifest', task ':app:processMlkitDebugOptimizedManifest', task ':app:processApplicationManifestMlkitDebugOptimizedForBundle', task ':react-native-camera:compileMlkitReleaseLibraryResources', task ':react-native-ml-kit_text-recognition:compileReleaseLibraryResources', task ':react-native-safe-area-context:compileReleaseLibraryResources', task ':react-native-screens:compileReleaseLibraryResources', task ':react-native-svg:compileReleaseLibraryResources', task ':app:bundleMlkitDebugOptimizedResources', task ':app:checkMlkitDebugOptimizedDuplicateClasses', task ':app:desugarMlkitDebugOptimizedFileDependencies', task ':app:mergeExtDexMlkitDebugOptimized', task ':react-native-ml-kit_text-recognition:generateReleaseBuildConfig', task ':react-native-ml-kit_text-recognition:parseReleaseLocalResources', task ':react-native-ml-kit_text-recognition:generateReleaseRFile', task ':react-native-ml-kit_text-recognition:javaPreCompileRelease', task ':react-native-ml-kit_text-recognition:compileReleaseJavaWithJavac', task ':react-native-ml-kit_text-recognition:bundleLibRuntimeToDirRelease', task ':react-native-camera:generateMlkitReleaseBuildConfig', task ':react-native-camera:parseMlkitReleaseLocalResources', task ':react-native-camera:generateMlkitReleaseRFile', task ':react-native-camera:javaPreCompileMlkitRelease', task ':react-native-camera:compileMlkitReleaseJavaWithJavac', task ':react-native-camera:bundleLibRuntimeToDirMlkitRelease', task ':react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors', task ':react-native-safe-area-context:generateReleaseBuildConfig', task ':react-native-safe-area-context:parseReleaseLocalResources', task ':react-native-safe-area-context:generateReleaseRFile', task ':react-native-safe-area-context:compileReleaseKotlin', task ':react-native-safe-area-context:javaPreCompileRelease', task ':react-native-safe-area-context:compileReleaseJavaWithJavac', task ':react-native-safe-area-context:bundleLibRuntimeToDirRelease', task ':react-native-screens:checkKotlinGradlePluginConfigurationErrors', task ':react-native-screens:generateReleaseBuildConfig', task ':react-native-screens:parseReleaseLocalResources', task ':react-native-screens:generateReleaseRFile', task ':react-native-screens:compileReleaseKotlin', task ':react-native-screens:javaPreCompileRelease', task ':react-native-screens:compileReleaseJavaWithJavac', task ':react-native-screens:bundleLibRuntimeToDirRelease', task ':react-native-svg:generateReleaseBuildConfig', task ':react-native-svg:parseReleaseLocalResources', task ':react-native-svg:generateReleaseRFile', task ':react-native-svg:javaPreCompileRelease', task ':react-native-svg:compileReleaseJavaWithJavac', task ':react-native-svg:bundleLibRuntimeToDirRelease', task ':app:mergeLibDexMlkitDebugOptimized', task ':app:mergeMlkitDebugOptimizedShaders', task ':app:compileMlkitDebugOptimizedShaders', task ':app:generateMlkitDebugOptimizedAssets', task ':react-native-camera:mergeMlkitReleaseShaders', task ':react-native-camera:compileMlkitReleaseShaders', task ':react-native-camera:generateMlkitReleaseAssets', task ':react-native-camera:packageMlkitReleaseAssets', task ':react-native-ml-kit_text-recognition:mergeReleaseShaders', task ':react-native-ml-kit_text-recognition:compileReleaseShaders', task ':react-native-ml-kit_text-recognition:generateReleaseAssets', task ':react-native-ml-kit_text-recognition:packageReleaseAssets', task ':react-native-safe-area-context:mergeReleaseShaders', task ':react-native-safe-area-context:compileReleaseShaders', task ':react-native-safe-area-context:generateReleaseAssets', task ':react-native-safe-area-context:packageReleaseAssets', task ':react-native-screens:mergeReleaseShaders', task ':react-native-screens:compileReleaseShaders', task ':react-native-screens:generateReleaseAssets', task ':react-native-screens:packageReleaseAssets', task ':react-native-svg:mergeReleaseShaders', task ':react-native-svg:compileReleaseShaders', task ':react-native-svg:generateReleaseAssets', task ':react-native-svg:packageReleaseAssets', task ':app:mergeMlkitDebugOptimizedAssets', task ':react-native-ml-kit_text-recognition:bundleLibRuntimeToJarRelease', task ':react-native-camera:bundleLibRuntimeToJarMlkitRelease', task ':react-native-safe-area-context:bundleLibRuntimeToJarRelease', task ':react-native-screens:bundleLibRuntimeToJarRelease', task ':react-native-svg:bundleLibRuntimeToJarRelease', task ':app:checkKotlinGradlePluginConfigurationErrors', task ':app:generateMlkitDebugOptimizedBuildConfig', task ':react-native-camera:writeMlkitReleaseAarMetadata', task ':react-native-ml-kit_text-recognition:writeReleaseAarMetadata', task ':react-native-safe-area-context:writeReleaseAarMetadata', task ':react-native-screens:writeReleaseAarMetadata', task ':react-native-svg:writeReleaseAarMetadata', task ':app:checkMlkitDebugOptimizedAarMetadata', task ':app:packageMlkitDebugOptimizedResources', task ':app:parseMlkitDebugOptimizedLocalResources', task ':app:processMlkitDebugOptimizedManifestForPackage', task ':app:processMlkitDebugOptimizedResources', task ':react-native-camera:bundleLibCompileToJarMlkitRelease', task ':react-native-ml-kit_text-recognition:bundleLibCompileToJarRelease', task ':react-native-safe-area-context:bundleLibCompileToJarRelease', task ':react-native-screens:bundleLibCompileToJarRelease', task ':react-native-svg:bundleLibCompileToJarRelease', task ':app:compileMlkitDebugOptimizedKotlin', task ':app:javaPreCompileMlkitDebugOptimized', task ':app:compileMlkitDebugOptimizedJavaWithJavac', task ':app:dexBuilderMlkitDebugOptimized', task ':app:mergeMlkitDebugOptimizedGlobalSynthetics', task ':app:processMlkitDebugOptimizedJavaRes', task ':react-native-camera:processMlkitReleaseJavaRes', task ':react-native-ml-kit_text-recognition:processReleaseJavaRes', task ':react-native-safe-area-context:processReleaseJavaRes', task ':react-native-screens:processReleaseJavaRes', task ':react-native-svg:processReleaseJavaRes', task ':app:mergeMlkitDebugOptimizedJavaResource', task ':app:mergeProjectDexMlkitDebugOptimized', task ':app:configureCMakeRelease[arm64-v8a]', task ':app:buildCMakeRelease[arm64-v8a]', task ':app:configureCMakeRelease[armeabi-v7a]', task ':app:buildCMakeRelease[armeabi-v7a]', task ':app:configureCMakeRelease[x86]', task ':app:buildCMakeRelease[x86]', task ':app:configureCMakeRelease[x86_64]', task ':app:buildCMakeRelease[x86_64]', task ':app:mergeMlkitDebugOptimizedJniLibFolders', task ':react-native-camera:mergeMlkitReleaseJniLibFolders', task ':react-native-camera:mergeMlkitReleaseNativeLibs', task ':react-native-camera:copyMlkitReleaseJniLibsProjectOnly', task ':react-native-ml-kit_text-recognition:mergeReleaseJniLibFolders', task ':react-native-ml-kit_text-recognition:mergeReleaseNativeLibs', task ':react-native-ml-kit_text-recognition:copyReleaseJniLibsProjectOnly', task ':react-native-safe-area-context:mergeReleaseJniLibFolders', task ':react-native-safe-area-context:mergeReleaseNativeLibs', task ':react-native-safe-area-context:copyReleaseJniLibsProjectOnly', task ':react-native-screens:configureCMakeRelWithDebInfo[arm64-v8a]', task ':react-native-screens:buildCMakeRelWithDebInfo[arm64-v8a]', task ':react-native-screens:configureCMakeRelWithDebInfo[armeabi-v7a]', task ':react-native-screens:buildCMakeRelWithDebInfo[armeabi-v7a]', task ':react-native-screens:configureCMakeRelWithDebInfo[x86]', task ':react-native-screens:buildCMakeRelWithDebInfo[x86]', task ':react-native-screens:configureCMakeRelWithDebInfo[x86_64]', task ':react-native-screens:buildCMakeRelWithDebInfo[x86_64]', task ':react-native-screens:mergeReleaseJniLibFolders', task ':react-native-screens:mergeReleaseNativeLibs', task ':react-native-screens:copyReleaseJniLibsProjectOnly', task ':react-native-svg:mergeReleaseJniLibFolders', task ':react-native-svg:mergeReleaseNativeLibs', task ':react-native-svg:copyReleaseJniLibsProjectOnly', task ':app:mergeMlkitDebugOptimizedNativeLibs', task ':app:stripMlkitDebugOptimizedDebugSymbols', task ':app:writeMlkitDebugOptimizedAppMetadata', task ':app:buildMlkitDebugOptimizedPreBundle']
+Tasks that were excluded: []
+work action Parameters of ClassesDirToClassesTransform (Thread[Execution worker Thread 11,5,main]) started.
+work action Parameters of DexingNoClasspathTransform (Thread[Execution worker Thread 11,5,main]) started.
+work action Parameters of DexingOutputSplitTransform (Thread[Execution worker Thread 11,5,main]) started.
+work action Parameters of IdentityTransform (Thread[Execution worker Thread 11,5,main]) started.
+work action Parameters of DexingOutputSplitTransform (Thread[Execution worker Thread 11,5,main]) started.
+Resolve mutations for :app:createBundleMlkitDebugOptimizedJsAndAssets (Thread[Execution worker Thread 11,5,main]) started.
+:app:createBundleMlkitDebugOptimizedJsAndAssets (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :app:createBundleMlkitDebugOptimizedJsAndAssets UP-TO-DATE
+Caching disabled for task ':app:createBundleMlkitDebugOptimizedJsAndAssets' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':app:createBundleMlkitDebugOptimizedJsAndAssets' as it is up-to-date.
+Resolve mutations for :app:generateAutolinkingNewArchitectureFiles (Thread[Execution worker Thread 11,5,main]) started.
+:app:generateAutolinkingNewArchitectureFiles (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :app:generateAutolinkingNewArchitectureFiles UP-TO-DATE
+Caching disabled for task ':app:generateAutolinkingNewArchitectureFiles' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':app:generateAutolinkingNewArchitectureFiles' as it is up-to-date.
+Resolve mutations for :app:generateAutolinkingPackageList (Thread[Execution worker Thread 11,5,main]) started.
+:app:generateAutolinkingPackageList (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :app:generateAutolinkingPackageList UP-TO-DATE
+Caching disabled for task ':app:generateAutolinkingPackageList' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':app:generateAutolinkingPackageList' as it is up-to-date.
+Resolve mutations for :app:generateCodegenSchemaFromJavaScript (Thread[Execution worker Thread 11,5,main]) started.
+:app:generateCodegenSchemaFromJavaScript (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+Skipping task ':app:generateCodegenSchemaFromJavaScript' as task onlyIf 'Task satisfies onlyIf spec' is false.
+Resolve mutations for :app:generateCodegenArtifactsFromSchema (Thread[Execution worker Thread 11,5,main]) started.
+:app:generateCodegenArtifactsFromSchema (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :app:generateCodegenArtifactsFromSchema SKIPPED
+Skipping task ':app:generateCodegenArtifactsFromSchema' as task onlyIf 'Task satisfies onlyIf spec' is false.
+Resolve mutations for :app:generateReactNativeEntryPoint (Thread[Execution worker Thread 11,5,main]) started.
+:app:generateReactNativeEntryPoint (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :app:generateReactNativeEntryPoint UP-TO-DATE
+Caching disabled for task ':app:generateReactNativeEntryPoint' because:
+  Build cache is disabled
+  Caching has not been enabled for the task
+Skipping task ':app:generateReactNativeEntryPoint' as it is up-to-date.
+Resolve mutations for :app:preBuild (Thread[Execution worker Thread 11,5,main]) started.
+:app:preBuild (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preMlkitDebugOptimizedBuild (Thread[Execution worker Thread 11,5,main]) started.
+:app:preMlkitDebugOptimizedBuild (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :app:preMlkitDebugOptimizedBuild UP-TO-DATE
+Skipping task ':app:preMlkitDebugOptimizedBuild' as it has no actions.
+Resolve mutations for :app:generateMlkitDebugOptimizedResValues (Thread[Execution worker Thread 7,5,main]) started.
+:app:generateMlkitDebugOptimizedResValues (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :app:generateMlkitDebugOptimizedResValues UP-TO-DATE
+Caching disabled for task ':app:generateMlkitDebugOptimizedResValues' because:
+  Build cache is disabled
+Skipping task ':app:generateMlkitDebugOptimizedResValues' as it is up-to-date.
+Resolve mutations for :react-native-camera:preBuild (Thread[Execution worker Thread 7,5,main]) started.
+:react-native-camera:preBuild (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :react-native-camera:preBuild UP-TO-DATE
+Skipping task ':react-native-camera:preBuild' as it has no actions.
+Resolve mutations for :react-native-camera:preMlkitReleaseBuild (Thread[Execution worker Thread 7,5,main]) started.
+:react-native-camera:preMlkitReleaseBuild (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :react-native-camera:preMlkitReleaseBuild UP-TO-DATE
+Skipping task ':react-native-camera:preMlkitReleaseBuild' as it has no actions.
+Resolve mutations for :react-native-camera:generateMlkitReleaseResValues (Thread[Execution worker Thread 6,5,main]) started.
+:react-native-camera:generateMlkitReleaseResValues (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :react-native-camera:generateMlkitReleaseResValues UP-TO-DATE
+Caching disabled for task ':react-native-camera:generateMlkitReleaseResValues' because:
+  Build cache is disabled
+Skipping task ':react-native-camera:generateMlkitReleaseResValues' as it is up-to-date.
+Resolve mutations for :react-native-camera:generateMlkitReleaseResources (Thread[Execution worker Thread 6,5,main]) started.
+:react-native-camera:generateMlkitReleaseResources (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :react-native-camera:generateMlkitReleaseResources UP-TO-DATE
+Skipping task ':react-native-camera:generateMlkitReleaseResources' as it has no actions.
+Resolve mutations for :react-native-camera:packageMlkitReleaseResources (Thread[Execution worker Thread 6,5,main]) started.
+:react-native-camera:packageMlkitReleaseResources (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :react-native-camera:packageMlkitReleaseResources UP-TO-DATE
+Caching disabled for task ':react-native-camera:packageMlkitReleaseResources' because:
+  Build cache is disabled
+Skipping task ':react-native-camera:packageMlkitReleaseResources' as it is up-to-date.
+work action resolve mlkitRelease (project :react-native-camera) (Thread[Execution worker Thread 6,5,main]) started.
+Resolve mutations for :react-native-ml-kit_text-recognition:preBuild (Thread[Execution worker Thread 6,5,main]) started.
+:react-native-ml-kit_text-recognition:preBuild (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:preBuild UP-TO-DATE
+Skipping task ':react-native-ml-kit_text-recognition:preBuild' as it has no actions.
+Resolve mutations for :react-native-ml-kit_text-recognition:preReleaseBuild (Thread[Execution worker Thread 6,5,main]) started.
+:react-native-ml-kit_text-recognition:preReleaseBuild (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:preReleaseBuild UP-TO-DATE
+Skipping task ':react-native-ml-kit_text-recognition:preReleaseBuild' as it has no actions.
+Resolve mutations for :react-native-ml-kit_text-recognition:generateReleaseResValues (Thread[Execution worker Thread 6,5,main]) started.
+:react-native-ml-kit_text-recognition:generateReleaseResValues (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:generateReleaseResValues UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:generateReleaseResValues' because:
+  Build cache is disabled
+Skipping task ':react-native-ml-kit_text-recognition:generateReleaseResValues' as it is up-to-date.
+Resolve mutations for :react-native-ml-kit_text-recognition:generateReleaseResources (Thread[Execution worker Thread 6,5,main]) started.
+:react-native-ml-kit_text-recognition:generateReleaseResources (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:generateReleaseResources UP-TO-DATE
+Skipping task ':react-native-ml-kit_text-recognition:generateReleaseResources' as it has no actions.
+Resolve mutations for :react-native-ml-kit_text-recognition:packageReleaseResources (Thread[Execution worker Thread 6,5,main]) started.
+:react-native-ml-kit_text-recognition:packageReleaseResources (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:packageReleaseResources UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:packageReleaseResources' because:
+  Build cache is disabled
+Skipping task ':react-native-ml-kit_text-recognition:packageReleaseResources' as it is up-to-date.
+work action resolve release (project :react-native-ml-kit_text-recognition) (Thread[Execution worker Thread 6,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:preBuild (Thread[Execution worker Thread 7,5,main]) started.
+:react-native-safe-area-context:preBuild (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :react-native-safe-area-context:preBuild UP-TO-DATE
+Skipping task ':react-native-safe-area-context:preBuild' as it has no actions.
+Resolve mutations for :react-native-safe-area-context:preReleaseBuild (Thread[Execution worker Thread 7,5,main]) started.
+:react-native-safe-area-context:preReleaseBuild (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-safe-area-context:preReleaseBuild UP-TO-DATE
+Skipping task ':react-native-safe-area-context:preReleaseBuild' as it has no actions.
+Resolve mutations for :react-native-safe-area-context:generateReleaseResValues (Thread[Execution worker,5,main]) started.
+:react-native-safe-area-context:generateReleaseResValues (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-safe-area-context:generateReleaseResValues UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:generateReleaseResValues' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:generateReleaseResValues' as it is up-to-date.
+Resolve mutations for :react-native-safe-area-context:generateReleaseResources (Thread[Execution worker,5,main]) started.
+:react-native-safe-area-context:generateReleaseResources (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-safe-area-context:generateReleaseResources UP-TO-DATE
+Skipping task ':react-native-safe-area-context:generateReleaseResources' as it has no actions.
+Resolve mutations for :react-native-safe-area-context:packageReleaseResources (Thread[Execution worker,5,main]) started.
+:react-native-safe-area-context:packageReleaseResources (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-safe-area-context:packageReleaseResources UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:packageReleaseResources' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:packageReleaseResources' as it is up-to-date.
+work action resolve release (project :react-native-safe-area-context) (Thread[Execution worker,5,main]) started.
+Resolve mutations for :react-native-screens:preBuild (Thread[Execution worker,5,main]) started.
+:react-native-screens:preBuild (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-screens:preBuild UP-TO-DATE
+Skipping task ':react-native-screens:preBuild' as it has no actions.
+Resolve mutations for :react-native-screens:preReleaseBuild (Thread[Execution worker,5,main]) started.
+:react-native-screens:preReleaseBuild (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-screens:preReleaseBuild UP-TO-DATE
+Skipping task ':react-native-screens:preReleaseBuild' as it has no actions.
+Resolve mutations for :react-native-screens:generateReleaseResValues (Thread[Execution worker,5,main]) started.
+:react-native-screens:generateReleaseResValues (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-screens:generateReleaseResValues UP-TO-DATE
+Caching disabled for task ':react-native-screens:generateReleaseResValues' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:generateReleaseResValues' as it is up-to-date.
+Resolve mutations for :react-native-screens:generateReleaseResources (Thread[Execution worker,5,main]) started.
+:react-native-screens:generateReleaseResources (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-screens:generateReleaseResources UP-TO-DATE
+Skipping task ':react-native-screens:generateReleaseResources' as it has no actions.
+Resolve mutations for :react-native-screens:packageReleaseResources (Thread[Execution worker,5,main]) started.
+:react-native-screens:packageReleaseResources (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-screens:packageReleaseResources UP-TO-DATE
+Caching disabled for task ':react-native-screens:packageReleaseResources' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:packageReleaseResources' as it is up-to-date.
+work action resolve release (project :react-native-screens) (Thread[Execution worker,5,main]) started.
+Resolve mutations for :react-native-svg:preBuild (Thread[Execution worker,5,main]) started.
+:react-native-svg:preBuild (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-svg:preBuild UP-TO-DATE
+Skipping task ':react-native-svg:preBuild' as it has no actions.
+Resolve mutations for :react-native-svg:preReleaseBuild (Thread[Execution worker,5,main]) started.
+:react-native-svg:preReleaseBuild (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-svg:preReleaseBuild UP-TO-DATE
+Skipping task ':react-native-svg:preReleaseBuild' as it has no actions.
+Resolve mutations for :react-native-svg:generateReleaseResValues (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-svg:generateReleaseResValues (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-svg:generateReleaseResValues UP-TO-DATE
+Caching disabled for task ':react-native-svg:generateReleaseResValues' because:
+  Build cache is disabled
+Skipping task ':react-native-svg:generateReleaseResValues' as it is up-to-date.
+Resolve mutations for :react-native-svg:generateReleaseResources (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-svg:generateReleaseResources (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-svg:generateReleaseResources UP-TO-DATE
+Skipping task ':react-native-svg:generateReleaseResources' as it has no actions.
+Resolve mutations for :react-native-svg:packageReleaseResources (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-svg:packageReleaseResources (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-svg:packageReleaseResources UP-TO-DATE
+Caching disabled for task ':react-native-svg:packageReleaseResources' because:
+  Build cache is disabled
+Skipping task ':react-native-svg:packageReleaseResources' as it is up-to-date.
+work action resolve release (project :react-native-svg) (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :app:mapMlkitDebugOptimizedSourceSetPaths (Thread[Execution worker Thread 3,5,main]) started.
+:app:mapMlkitDebugOptimizedSourceSetPaths (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :app:mapMlkitDebugOptimizedSourceSetPaths UP-TO-DATE
+Caching disabled for task ':app:mapMlkitDebugOptimizedSourceSetPaths' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:mapMlkitDebugOptimizedSourceSetPaths' as it is up-to-date.
+Resolve mutations for :app:generateMlkitDebugOptimizedResources (Thread[Execution worker Thread 3,5,main]) started.
+:app:generateMlkitDebugOptimizedResources (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :app:generateMlkitDebugOptimizedResources UP-TO-DATE
+Skipping task ':app:generateMlkitDebugOptimizedResources' as it has no actions.
+Resolve mutations for :app:mergeMlkitDebugOptimizedResources (Thread[Execution worker Thread 3,5,main]) started.
+:app:mergeMlkitDebugOptimizedResources (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :app:mergeMlkitDebugOptimizedResources UP-TO-DATE
+Caching disabled for task ':app:mergeMlkitDebugOptimizedResources' because:
+  Build cache is disabled
+Skipping task ':app:mergeMlkitDebugOptimizedResources' as it is up-to-date.
+Resolve mutations for :app:createMlkitDebugOptimizedCompatibleScreenManifests (Thread[Execution worker Thread 3,5,main]) started.
+:app:createMlkitDebugOptimizedCompatibleScreenManifests (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :app:createMlkitDebugOptimizedCompatibleScreenManifests UP-TO-DATE
+Caching disabled for task ':app:createMlkitDebugOptimizedCompatibleScreenManifests' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:createMlkitDebugOptimizedCompatibleScreenManifests' as it is up-to-date.
+Resolve mutations for :app:extractDeepLinksMlkitDebugOptimized (Thread[Execution worker Thread 3,5,main]) started.
+:app:extractDeepLinksMlkitDebugOptimized (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :app:extractDeepLinksMlkitDebugOptimized UP-TO-DATE
+Caching disabled for task ':app:extractDeepLinksMlkitDebugOptimized' because:
+  Build cache is disabled
+Skipping task ':app:extractDeepLinksMlkitDebugOptimized' as it is up-to-date.
+Resolve mutations for :react-native-camera:extractDeepLinksMlkitRelease (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-camera:extractDeepLinksMlkitRelease (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-camera:extractDeepLinksMlkitRelease UP-TO-DATE
+Caching disabled for task ':react-native-camera:extractDeepLinksMlkitRelease' because:
+  Build cache is disabled
+Skipping task ':react-native-camera:extractDeepLinksMlkitRelease' as it is up-to-date.
+work action resolve navigation.json (project :react-native-camera) (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :react-native-camera:processMlkitReleaseManifest (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-camera:processMlkitReleaseManifest (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-camera:processMlkitReleaseManifest UP-TO-DATE
+Caching disabled for task ':react-native-camera:processMlkitReleaseManifest' because:
+  Build cache is disabled
+Skipping task ':react-native-camera:processMlkitReleaseManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :react-native-camera) (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :react-native-ml-kit_text-recognition:extractDeepLinksRelease (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-ml-kit_text-recognition:extractDeepLinksRelease (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:extractDeepLinksRelease UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:extractDeepLinksRelease' because:
+  Build cache is disabled
+Skipping task ':react-native-ml-kit_text-recognition:extractDeepLinksRelease' as it is up-to-date.
+work action resolve navigation.json (project :react-native-ml-kit_text-recognition) (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :react-native-ml-kit_text-recognition:processReleaseManifest (Thread[included builds,5,main]) started.
+:react-native-ml-kit_text-recognition:processReleaseManifest (Thread[included builds,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:processReleaseManifest UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:processReleaseManifest' because:
+  Build cache is disabled
+Skipping task ':react-native-ml-kit_text-recognition:processReleaseManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :react-native-ml-kit_text-recognition) (Thread[included builds,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:extractDeepLinksRelease (Thread[included builds,5,main]) started.
+:react-native-safe-area-context:extractDeepLinksRelease (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-safe-area-context:extractDeepLinksRelease UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:extractDeepLinksRelease' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:extractDeepLinksRelease' as it is up-to-date.
+work action resolve navigation.json (project :react-native-safe-area-context) (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:processReleaseManifest (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-safe-area-context:processReleaseManifest (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-safe-area-context:processReleaseManifest UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:processReleaseManifest' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:processReleaseManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :react-native-safe-area-context) (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :react-native-screens:extractDeepLinksRelease (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-screens:extractDeepLinksRelease (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-screens:extractDeepLinksRelease UP-TO-DATE
+Caching disabled for task ':react-native-screens:extractDeepLinksRelease' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:extractDeepLinksRelease' as it is up-to-date.
+work action resolve navigation.json (project :react-native-screens) (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :react-native-screens:processReleaseManifest (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-screens:processReleaseManifest (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-screens:processReleaseManifest UP-TO-DATE
+Caching disabled for task ':react-native-screens:processReleaseManifest' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:processReleaseManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :react-native-screens) (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :react-native-svg:extractDeepLinksRelease (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-svg:extractDeepLinksRelease (Thread[Execution worker Thread 8,5,main]) started.
+
+> Task :react-native-svg:extractDeepLinksRelease UP-TO-DATE
+Caching disabled for task ':react-native-svg:extractDeepLinksRelease' because:
+  Build cache is disabled
+Skipping task ':react-native-svg:extractDeepLinksRelease' as it is up-to-date.
+work action resolve navigation.json (project :react-native-svg) (Thread[Execution worker Thread 8,5,main]) started.
+Resolve mutations for :react-native-svg:processReleaseManifest (Thread[Execution worker Thread 8,5,main]) started.
+:react-native-svg:processReleaseManifest (Thread[Execution worker Thread 8,5,main]) started.
+
+> Task :react-native-svg:processReleaseManifest UP-TO-DATE
+Caching disabled for task ':react-native-svg:processReleaseManifest' because:
+  Build cache is disabled
+Skipping task ':react-native-svg:processReleaseManifest' as it is up-to-date.
+work action resolve AndroidManifest.xml (project :react-native-svg) (Thread[Execution worker Thread 8,5,main]) started.
+Resolve mutations for :app:processMlkitDebugOptimizedMainManifest (Thread[Execution worker Thread 9,5,main]) started.
+:app:processMlkitDebugOptimizedMainManifest (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :app:processMlkitDebugOptimizedMainManifest UP-TO-DATE
+Caching disabled for task ':app:processMlkitDebugOptimizedMainManifest' because:
+  Build cache is disabled
+Skipping task ':app:processMlkitDebugOptimizedMainManifest' as it is up-to-date.
+Resolve mutations for :app:processMlkitDebugOptimizedManifest (Thread[Execution worker Thread 9,5,main]) started.
+:app:processMlkitDebugOptimizedManifest (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :app:processMlkitDebugOptimizedManifest UP-TO-DATE
+Caching disabled for task ':app:processMlkitDebugOptimizedManifest' because:
+  Build cache is disabled
+Skipping task ':app:processMlkitDebugOptimizedManifest' as it is up-to-date.
+Resolve mutations for :app:processApplicationManifestMlkitDebugOptimizedForBundle (Thread[Execution worker Thread 9,5,main]) started.
+:app:processApplicationManifestMlkitDebugOptimizedForBundle (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:processApplicationManifestMlkitDebugOptimizedForBundle UP-TO-DATE
+Caching disabled for task ':app:processApplicationManifestMlkitDebugOptimizedForBundle' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:processApplicationManifestMlkitDebugOptimizedForBundle' as it is up-to-date.
+Resolve mutations for :react-native-camera:compileMlkitReleaseLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-camera:compileMlkitReleaseLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-camera:compileMlkitReleaseLibraryResources UP-TO-DATE
+Caching disabled for task ':react-native-camera:compileMlkitReleaseLibraryResources' because:
+  Build cache is disabled
+Skipping task ':react-native-camera:compileMlkitReleaseLibraryResources' as it is up-to-date.
+work action resolve out (project :react-native-camera) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-ml-kit_text-recognition:compileReleaseLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-ml-kit_text-recognition:compileReleaseLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:compileReleaseLibraryResources UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:compileReleaseLibraryResources' because:
+  Build cache is disabled
+Skipping task ':react-native-ml-kit_text-recognition:compileReleaseLibraryResources' as it is up-to-date.
+work action resolve out (project :react-native-ml-kit_text-recognition) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:compileReleaseLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-safe-area-context:compileReleaseLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-safe-area-context:compileReleaseLibraryResources UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:compileReleaseLibraryResources' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:compileReleaseLibraryResources' as it is up-to-date.
+work action resolve out (project :react-native-safe-area-context) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-screens:compileReleaseLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-screens:compileReleaseLibraryResources (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-screens:compileReleaseLibraryResources UP-TO-DATE
+Caching disabled for task ':react-native-screens:compileReleaseLibraryResources' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:compileReleaseLibraryResources' as it is up-to-date.
+work action resolve out (project :react-native-screens) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-svg:compileReleaseLibraryResources (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-svg:compileReleaseLibraryResources (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-svg:compileReleaseLibraryResources UP-TO-DATE
+Caching disabled for task ':react-native-svg:compileReleaseLibraryResources' because:
+  Build cache is disabled
+Skipping task ':react-native-svg:compileReleaseLibraryResources' as it is up-to-date.
+work action resolve out (project :react-native-svg) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :app:bundleMlkitDebugOptimizedResources (Thread[Execution worker Thread 10,5,main]) started.
+:app:bundleMlkitDebugOptimizedResources (Thread[Execution worker Thread 10,5,main]) started.
+
+> Task :app:bundleMlkitDebugOptimizedResources UP-TO-DATE
+Caching disabled for task ':app:bundleMlkitDebugOptimizedResources' because:
+  Build cache is disabled
+Skipping task ':app:bundleMlkitDebugOptimizedResources' as it is up-to-date.
+Resolve mutations for :app:checkMlkitDebugOptimizedDuplicateClasses (Thread[Execution worker Thread 10,5,main]) started.
+:app:checkMlkitDebugOptimizedDuplicateClasses (Thread[Execution worker Thread 10,5,main]) started.
+
+> Task :app:checkMlkitDebugOptimizedDuplicateClasses UP-TO-DATE
+Caching disabled for task ':app:checkMlkitDebugOptimizedDuplicateClasses' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:checkMlkitDebugOptimizedDuplicateClasses' as it is up-to-date.
+Resolve mutations for :app:desugarMlkitDebugOptimizedFileDependencies (Thread[Execution worker Thread 10,5,main]) started.
+:app:desugarMlkitDebugOptimizedFileDependencies (Thread[Execution worker Thread 10,5,main]) started.
+
+> Task :app:desugarMlkitDebugOptimizedFileDependencies UP-TO-DATE
+Caching disabled for task ':app:desugarMlkitDebugOptimizedFileDependencies' because:
+  Build cache is disabled
+Skipping task ':app:desugarMlkitDebugOptimizedFileDependencies' as it is up-to-date.
+Resolve mutations for :app:mergeExtDexMlkitDebugOptimized (Thread[Execution worker Thread 10,5,main]) started.
+:app:mergeExtDexMlkitDebugOptimized (Thread[Execution worker Thread 10,5,main]) started.
+
+> Task :app:mergeExtDexMlkitDebugOptimized UP-TO-DATE
+Caching disabled for task ':app:mergeExtDexMlkitDebugOptimized' because:
+  Build cache is disabled
+Skipping task ':app:mergeExtDexMlkitDebugOptimized' as it is up-to-date.
+Resolve mutations for :react-native-ml-kit_text-recognition:generateReleaseBuildConfig (Thread[Execution worker Thread 10,5,main]) started.
+:react-native-ml-kit_text-recognition:generateReleaseBuildConfig (Thread[Execution worker Thread 10,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:generateReleaseBuildConfig UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:generateReleaseBuildConfig' because:
+  Build cache is disabled
+Skipping task ':react-native-ml-kit_text-recognition:generateReleaseBuildConfig' as it is up-to-date.
+Resolve mutations for :react-native-ml-kit_text-recognition:parseReleaseLocalResources (Thread[Execution worker Thread 10,5,main]) started.
+:react-native-ml-kit_text-recognition:parseReleaseLocalResources (Thread[Execution worker Thread 10,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:parseReleaseLocalResources UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:parseReleaseLocalResources' because:
+  Build cache is disabled
+Skipping task ':react-native-ml-kit_text-recognition:parseReleaseLocalResources' as it is up-to-date.
+Resolve mutations for :react-native-ml-kit_text-recognition:generateReleaseRFile (Thread[Execution worker Thread 10,5,main]) started.
+:react-native-ml-kit_text-recognition:generateReleaseRFile (Thread[Execution worker Thread 10,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:generateReleaseRFile UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:generateReleaseRFile' because:
+  Build cache is disabled
+Skipping task ':react-native-ml-kit_text-recognition:generateReleaseRFile' as it is up-to-date.
+work action resolve package-aware-r.txt (project :react-native-ml-kit_text-recognition) (Thread[Execution worker Thread 10,5,main]) started.
+Resolve mutations for :react-native-ml-kit_text-recognition:javaPreCompileRelease (Thread[Execution worker Thread 11,5,main]) started.
+:react-native-ml-kit_text-recognition:javaPreCompileRelease (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:javaPreCompileRelease UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:javaPreCompileRelease' because:
+  Build cache is disabled
+Skipping task ':react-native-ml-kit_text-recognition:javaPreCompileRelease' as it is up-to-date.
+Resolve mutations for :react-native-ml-kit_text-recognition:compileReleaseJavaWithJavac (Thread[Execution worker Thread 11,5,main]) started.
+:react-native-ml-kit_text-recognition:compileReleaseJavaWithJavac (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:compileReleaseJavaWithJavac UP-TO-DATE
+Custom actions are attached to task ':react-native-ml-kit_text-recognition:compileReleaseJavaWithJavac'.
+Caching disabled for task ':react-native-ml-kit_text-recognition:compileReleaseJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':react-native-ml-kit_text-recognition:compileReleaseJavaWithJavac' as it is up-to-date.
+No compile result for :react-native-ml-kit_text-recognition:compileReleaseJavaWithJavac
+No compile result for :react-native-ml-kit_text-recognition:compileReleaseJavaWithJavac
+Resolve mutations for :react-native-ml-kit_text-recognition:bundleLibRuntimeToDirRelease (Thread[Execution worker Thread 11,5,main]) started.
+:react-native-ml-kit_text-recognition:bundleLibRuntimeToDirRelease (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:bundleLibRuntimeToDirRelease UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:bundleLibRuntimeToDirRelease' because:
+  Build cache is disabled
+  Tasks that merge files into a directory/jar without further processing usually do not benefit from caching. Also, their outputs are usually large, which would consume a lot of space when cached.
+Skipping task ':react-native-ml-kit_text-recognition:bundleLibRuntimeToDirRelease' as it is up-to-date.
+work action resolve release (project :react-native-ml-kit_text-recognition) (Thread[Execution worker Thread 11,5,main]) started.
+ClassesDirToClassesTransform (Thread[Execution worker Thread 11,5,main]) started.
+Resolve mutations for :react-native-camera:generateMlkitReleaseBuildConfig (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-camera:generateMlkitReleaseBuildConfig (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-camera:generateMlkitReleaseBuildConfig UP-TO-DATE
+Caching disabled for task ':react-native-camera:generateMlkitReleaseBuildConfig' because:
+  Build cache is disabled
+Skipping task ':react-native-camera:generateMlkitReleaseBuildConfig' as it is up-to-date.
+Resolve mutations for :react-native-camera:parseMlkitReleaseLocalResources (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-camera:parseMlkitReleaseLocalResources (Thread[Execution worker Thread 3,5,main]) started.
+DexingNoClasspathTransform (Thread[Execution worker Thread 11,5,main]) started.
+
+> Transform release (project :react-native-ml-kit_text-recognition) with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/@react-native-ml-kit/text-recognition/android/build/intermediates/runtime_library_classes_dir/release because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/@react-native-ml-kit/text-recognition/android/build/intermediates/runtime_library_classes_dir/release as it is up-to-date.
+DexingOutputSplitTransform (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :react-native-camera:parseMlkitReleaseLocalResources UP-TO-DATE
+Caching disabled for task ':react-native-camera:parseMlkitReleaseLocalResources' because:
+  Build cache is disabled
+Skipping task ':react-native-camera:parseMlkitReleaseLocalResources' as it is up-to-date.
+Resolve mutations for :react-native-camera:generateMlkitReleaseRFile (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-camera:generateMlkitReleaseRFile (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-camera:generateMlkitReleaseRFile UP-TO-DATE
+Caching disabled for task ':react-native-camera:generateMlkitReleaseRFile' because:
+  Build cache is disabled
+Skipping task ':react-native-camera:generateMlkitReleaseRFile' as it is up-to-date.
+work action resolve package-aware-r.txt (project :react-native-camera) (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :react-native-camera:javaPreCompileMlkitRelease (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-camera:javaPreCompileMlkitRelease (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-camera:javaPreCompileMlkitRelease UP-TO-DATE
+Caching disabled for task ':react-native-camera:javaPreCompileMlkitRelease' because:
+  Build cache is disabled
+Skipping task ':react-native-camera:javaPreCompileMlkitRelease' as it is up-to-date.
+Resolve mutations for :react-native-camera:compileMlkitReleaseJavaWithJavac (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-camera:compileMlkitReleaseJavaWithJavac (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-camera:compileMlkitReleaseJavaWithJavac UP-TO-DATE
+Custom actions are attached to task ':react-native-camera:compileMlkitReleaseJavaWithJavac'.
+Caching disabled for task ':react-native-camera:compileMlkitReleaseJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':react-native-camera:compileMlkitReleaseJavaWithJavac' as it is up-to-date.
+No compile result for :react-native-camera:compileMlkitReleaseJavaWithJavac
+No compile result for :react-native-camera:compileMlkitReleaseJavaWithJavac
+Resolve mutations for :react-native-camera:bundleLibRuntimeToDirMlkitRelease (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-camera:bundleLibRuntimeToDirMlkitRelease (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-camera:bundleLibRuntimeToDirMlkitRelease UP-TO-DATE
+Caching disabled for task ':react-native-camera:bundleLibRuntimeToDirMlkitRelease' because:
+  Build cache is disabled
+  Tasks that merge files into a directory/jar without further processing usually do not benefit from caching. Also, their outputs are usually large, which would consume a lot of space when cached.
+Skipping task ':react-native-camera:bundleLibRuntimeToDirMlkitRelease' as it is up-to-date.
+work action resolve mlkitRelease (project :react-native-camera) (Thread[Execution worker Thread 3,5,main]) started.
+ClassesDirToClassesTransform (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :react-native-safe-area-context:generateReleaseBuildConfig (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-safe-area-context:generateReleaseBuildConfig (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-safe-area-context:generateReleaseBuildConfig UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:generateReleaseBuildConfig' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:generateReleaseBuildConfig' as it is up-to-date.
+Resolve mutations for :react-native-safe-area-context:parseReleaseLocalResources (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-safe-area-context:parseReleaseLocalResources (Thread[Execution worker Thread 5,5,main]) started.
+DexingNoClasspathTransform (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-safe-area-context:parseReleaseLocalResources UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:parseReleaseLocalResources' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:parseReleaseLocalResources' as it is up-to-date.
+Resolve mutations for :react-native-safe-area-context:generateReleaseRFile (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-safe-area-context:generateReleaseRFile (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-safe-area-context:generateReleaseRFile UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:generateReleaseRFile' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:generateReleaseRFile' as it is up-to-date.
+work action resolve package-aware-r.txt (project :react-native-safe-area-context) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:compileReleaseKotlin (Thread[Execution worker Thread 9,5,main]) started.
+:react-native-safe-area-context:compileReleaseKotlin (Thread[Execution worker Thread 9,5,main]) started.
+
+> Transform mlkitRelease (project :react-native-camera) with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-camera/android/build/intermediates/runtime_library_classes_dir/mlkitRelease because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-camera/android/build/intermediates/runtime_library_classes_dir/mlkitRelease as it is up-to-date.
+DexingOutputSplitTransform (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-safe-area-context:compileReleaseKotlin UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:compileReleaseKotlin' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:compileReleaseKotlin' as it is up-to-date.
+Resolve mutations for :react-native-safe-area-context:javaPreCompileRelease (Thread[Execution worker Thread 9,5,main]) started.
+:react-native-safe-area-context:javaPreCompileRelease (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :react-native-safe-area-context:javaPreCompileRelease UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:javaPreCompileRelease' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:javaPreCompileRelease' as it is up-to-date.
+Resolve mutations for :react-native-safe-area-context:compileReleaseJavaWithJavac (Thread[Execution worker Thread 9,5,main]) started.
+:react-native-safe-area-context:compileReleaseJavaWithJavac (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :react-native-safe-area-context:compileReleaseJavaWithJavac UP-TO-DATE
+Custom actions are attached to task ':react-native-safe-area-context:compileReleaseJavaWithJavac'.
+Caching disabled for task ':react-native-safe-area-context:compileReleaseJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:compileReleaseJavaWithJavac' as it is up-to-date.
+No compile result for :react-native-safe-area-context:compileReleaseJavaWithJavac
+No compile result for :react-native-safe-area-context:compileReleaseJavaWithJavac
+Resolve mutations for :react-native-safe-area-context:bundleLibRuntimeToDirRelease (Thread[Execution worker Thread 9,5,main]) started.
+:react-native-safe-area-context:bundleLibRuntimeToDirRelease (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :react-native-safe-area-context:bundleLibRuntimeToDirRelease UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:bundleLibRuntimeToDirRelease' because:
+  Build cache is disabled
+  Tasks that merge files into a directory/jar without further processing usually do not benefit from caching. Also, their outputs are usually large, which would consume a lot of space when cached.
+Skipping task ':react-native-safe-area-context:bundleLibRuntimeToDirRelease' as it is up-to-date.
+work action resolve release (project :react-native-safe-area-context) (Thread[Execution worker Thread 7,5,main]) started.
+ClassesDirToClassesTransform (Thread[included builds,5,main]) started.
+Resolve mutations for :react-native-screens:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 7,5,main]) started.
+:react-native-screens:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :react-native-screens:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':react-native-screens:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :react-native-screens:generateReleaseBuildConfig (Thread[Execution worker Thread 7,5,main]) started.
+:react-native-screens:generateReleaseBuildConfig (Thread[Execution worker Thread 7,5,main]) started.
+DexingNoClasspathTransform (Thread[included builds,5,main]) started.
+
+> Task :react-native-screens:generateReleaseBuildConfig UP-TO-DATE
+Caching disabled for task ':react-native-screens:generateReleaseBuildConfig' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:generateReleaseBuildConfig' as it is up-to-date.
+Resolve mutations for :react-native-screens:parseReleaseLocalResources (Thread[Execution worker Thread 7,5,main]) started.
+:react-native-screens:parseReleaseLocalResources (Thread[Execution worker Thread 2,5,main]) started.
+
+> Transform release (project :react-native-safe-area-context) with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-safe-area-context/android/build/intermediates/runtime_library_classes_dir/release because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-safe-area-context/android/build/intermediates/runtime_library_classes_dir/release as it is up-to-date.
+DexingOutputSplitTransform (Thread[included builds,5,main]) started.
+
+> Task :react-native-screens:parseReleaseLocalResources UP-TO-DATE
+Caching disabled for task ':react-native-screens:parseReleaseLocalResources' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:parseReleaseLocalResources' as it is up-to-date.
+Resolve mutations for :react-native-screens:generateReleaseRFile (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:generateReleaseRFile (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-screens:generateReleaseRFile UP-TO-DATE
+Caching disabled for task ':react-native-screens:generateReleaseRFile' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:generateReleaseRFile' as it is up-to-date.
+work action resolve package-aware-r.txt (project :react-native-screens) (Thread[Execution worker Thread 2,5,main]) started.
+Resolve mutations for :react-native-screens:compileReleaseKotlin (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:compileReleaseKotlin (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-screens:compileReleaseKotlin UP-TO-DATE
+Caching disabled for task ':react-native-screens:compileReleaseKotlin' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:compileReleaseKotlin' as it is up-to-date.
+Resolve mutations for :react-native-screens:javaPreCompileRelease (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:javaPreCompileRelease (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-screens:javaPreCompileRelease UP-TO-DATE
+Caching disabled for task ':react-native-screens:javaPreCompileRelease' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:javaPreCompileRelease' as it is up-to-date.
+Resolve mutations for :react-native-screens:compileReleaseJavaWithJavac (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:compileReleaseJavaWithJavac (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-screens:compileReleaseJavaWithJavac UP-TO-DATE
+Custom actions are attached to task ':react-native-screens:compileReleaseJavaWithJavac'.
+Caching disabled for task ':react-native-screens:compileReleaseJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:compileReleaseJavaWithJavac' as it is up-to-date.
+No compile result for :react-native-screens:compileReleaseJavaWithJavac
+No compile result for :react-native-screens:compileReleaseJavaWithJavac
+Resolve mutations for :react-native-screens:bundleLibRuntimeToDirRelease (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:bundleLibRuntimeToDirRelease (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-screens:bundleLibRuntimeToDirRelease UP-TO-DATE
+Caching disabled for task ':react-native-screens:bundleLibRuntimeToDirRelease' because:
+  Build cache is disabled
+  Tasks that merge files into a directory/jar without further processing usually do not benefit from caching. Also, their outputs are usually large, which would consume a lot of space when cached.
+Skipping task ':react-native-screens:bundleLibRuntimeToDirRelease' as it is up-to-date.
+work action resolve release (project :react-native-screens) (Thread[Execution worker Thread 2,5,main]) started.
+ClassesDirToClassesTransform (Thread[Execution worker Thread 2,5,main]) started.
+Resolve mutations for :react-native-svg:generateReleaseBuildConfig (Thread[Execution worker Thread 11,5,main]) started.
+:react-native-svg:generateReleaseBuildConfig (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :react-native-svg:generateReleaseBuildConfig UP-TO-DATE
+Caching disabled for task ':react-native-svg:generateReleaseBuildConfig' because:
+  Build cache is disabled
+Skipping task ':react-native-svg:generateReleaseBuildConfig' as it is up-to-date.
+Resolve mutations for :react-native-svg:parseReleaseLocalResources (Thread[Execution worker Thread 11,5,main]) started.
+:react-native-svg:parseReleaseLocalResources (Thread[Execution worker Thread 11,5,main]) started.
+DexingNoClasspathTransform (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-svg:parseReleaseLocalResources UP-TO-DATE
+Caching disabled for task ':react-native-svg:parseReleaseLocalResources' because:
+  Build cache is disabled
+Skipping task ':react-native-svg:parseReleaseLocalResources' as it is up-to-date.
+Resolve mutations for :react-native-svg:generateReleaseRFile (Thread[Execution worker Thread 9,5,main]) started.
+:react-native-svg:generateReleaseRFile (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :react-native-svg:generateReleaseRFile UP-TO-DATE
+Caching disabled for task ':react-native-svg:generateReleaseRFile' because:
+  Build cache is disabled
+Skipping task ':react-native-svg:generateReleaseRFile' as it is up-to-date.
+work action resolve package-aware-r.txt (project :react-native-svg) (Thread[Execution worker Thread 9,5,main]) started.
+Resolve mutations for :react-native-svg:javaPreCompileRelease (Thread[Execution worker Thread 9,5,main]) started.
+:react-native-svg:javaPreCompileRelease (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :react-native-svg:javaPreCompileRelease UP-TO-DATE
+Caching disabled for task ':react-native-svg:javaPreCompileRelease' because:
+  Build cache is disabled
+Skipping task ':react-native-svg:javaPreCompileRelease' as it is up-to-date.
+Resolve mutations for :react-native-svg:compileReleaseJavaWithJavac (Thread[Execution worker Thread 9,5,main]) started.
+:react-native-svg:compileReleaseJavaWithJavac (Thread[Execution worker Thread 9,5,main]) started.
+
+> Transform release (project :react-native-screens) with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/build/intermediates/runtime_library_classes_dir/release because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/build/intermediates/runtime_library_classes_dir/release as it is up-to-date.
+DexingOutputSplitTransform (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-svg:compileReleaseJavaWithJavac UP-TO-DATE
+Custom actions are attached to task ':react-native-svg:compileReleaseJavaWithJavac'.
+Caching disabled for task ':react-native-svg:compileReleaseJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':react-native-svg:compileReleaseJavaWithJavac' as it is up-to-date.
+No compile result for :react-native-svg:compileReleaseJavaWithJavac
+No compile result for :react-native-svg:compileReleaseJavaWithJavac
+Resolve mutations for :react-native-svg:bundleLibRuntimeToDirRelease (Thread[Execution worker Thread 9,5,main]) started.
+:react-native-svg:bundleLibRuntimeToDirRelease (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :react-native-svg:bundleLibRuntimeToDirRelease UP-TO-DATE
+Caching disabled for task ':react-native-svg:bundleLibRuntimeToDirRelease' because:
+  Build cache is disabled
+  Tasks that merge files into a directory/jar without further processing usually do not benefit from caching. Also, their outputs are usually large, which would consume a lot of space when cached.
+Skipping task ':react-native-svg:bundleLibRuntimeToDirRelease' as it is up-to-date.
+work action resolve release (project :react-native-svg) (Thread[Execution worker Thread 9,5,main]) started.
+ClassesDirToClassesTransform (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :app:mergeMlkitDebugOptimizedShaders (Thread[Execution worker Thread 9,5,main]) started.
+:app:mergeMlkitDebugOptimizedShaders (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :app:mergeMlkitDebugOptimizedShaders UP-TO-DATE
+Caching disabled for task ':app:mergeMlkitDebugOptimizedShaders' because:
+  Build cache is disabled
+Skipping task ':app:mergeMlkitDebugOptimizedShaders' as it is up-to-date.
+Resolve mutations for :app:compileMlkitDebugOptimizedShaders (Thread[Execution worker Thread 9,5,main]) started.
+:app:compileMlkitDebugOptimizedShaders (Thread[Execution worker Thread 9,5,main]) started.
+DexingNoClasspathTransform (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:compileMlkitDebugOptimizedShaders NO-SOURCE
+Skipping task ':app:compileMlkitDebugOptimizedShaders' as it has no source files and no previous output files.
+Resolve mutations for :app:generateMlkitDebugOptimizedAssets (Thread[Execution worker Thread 9,5,main]) started.
+:app:generateMlkitDebugOptimizedAssets (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :app:generateMlkitDebugOptimizedAssets UP-TO-DATE
+Skipping task ':app:generateMlkitDebugOptimizedAssets' as it has no actions.
+Resolve mutations for :react-native-camera:mergeMlkitReleaseShaders (Thread[Execution worker Thread 9,5,main]) started.
+:react-native-camera:mergeMlkitReleaseShaders (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :react-native-camera:mergeMlkitReleaseShaders UP-TO-DATE
+Caching disabled for task ':react-native-camera:mergeMlkitReleaseShaders' because:
+  Build cache is disabled
+Skipping task ':react-native-camera:mergeMlkitReleaseShaders' as it is up-to-date.
+Resolve mutations for :react-native-camera:compileMlkitReleaseShaders (Thread[Execution worker Thread 9,5,main]) started.
+:react-native-camera:compileMlkitReleaseShaders (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :react-native-camera:compileMlkitReleaseShaders NO-SOURCE
+Skipping task ':react-native-camera:compileMlkitReleaseShaders' as it has no source files and no previous output files.
+Resolve mutations for :react-native-camera:generateMlkitReleaseAssets (Thread[Execution worker Thread 9,5,main]) started.
+:react-native-camera:generateMlkitReleaseAssets (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :react-native-camera:generateMlkitReleaseAssets UP-TO-DATE
+Skipping task ':react-native-camera:generateMlkitReleaseAssets' as it has no actions.
+Resolve mutations for :react-native-camera:packageMlkitReleaseAssets (Thread[Execution worker Thread 9,5,main]) started.
+:react-native-camera:packageMlkitReleaseAssets (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :react-native-camera:packageMlkitReleaseAssets UP-TO-DATE
+Caching disabled for task ':react-native-camera:packageMlkitReleaseAssets' because:
+  Build cache is disabled
+Skipping task ':react-native-camera:packageMlkitReleaseAssets' as it is up-to-date.
+work action resolve out (project :react-native-camera) (Thread[Execution worker Thread 9,5,main]) started.
+Resolve mutations for :react-native-ml-kit_text-recognition:mergeReleaseShaders (Thread[Execution worker Thread 9,5,main]) started.
+:react-native-ml-kit_text-recognition:mergeReleaseShaders (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:mergeReleaseShaders UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:mergeReleaseShaders' because:
+  Build cache is disabled
+Skipping task ':react-native-ml-kit_text-recognition:mergeReleaseShaders' as it is up-to-date.
+Resolve mutations for :react-native-ml-kit_text-recognition:compileReleaseShaders (Thread[Execution worker Thread 9,5,main]) started.
+:react-native-ml-kit_text-recognition:compileReleaseShaders (Thread[included builds,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:compileReleaseShaders NO-SOURCE
+Skipping task ':react-native-ml-kit_text-recognition:compileReleaseShaders' as it has no source files and no previous output files.
+Resolve mutations for :react-native-ml-kit_text-recognition:generateReleaseAssets (Thread[included builds,5,main]) started.
+:react-native-ml-kit_text-recognition:generateReleaseAssets (Thread[included builds,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:generateReleaseAssets UP-TO-DATE
+Skipping task ':react-native-ml-kit_text-recognition:generateReleaseAssets' as it has no actions.
+Resolve mutations for :react-native-ml-kit_text-recognition:packageReleaseAssets (Thread[included builds,5,main]) started.
+:react-native-ml-kit_text-recognition:packageReleaseAssets (Thread[included builds,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:packageReleaseAssets UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:packageReleaseAssets' because:
+  Build cache is disabled
+Skipping task ':react-native-ml-kit_text-recognition:packageReleaseAssets' as it is up-to-date.
+work action resolve out (project :react-native-ml-kit_text-recognition) (Thread[included builds,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:mergeReleaseShaders (Thread[included builds,5,main]) started.
+:react-native-safe-area-context:mergeReleaseShaders (Thread[included builds,5,main]) started.
+
+> Transform release (project :react-native-svg) with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-svg/android/build/intermediates/runtime_library_classes_dir/release because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-svg/android/build/intermediates/runtime_library_classes_dir/release as it is up-to-date.
+DexingOutputSplitTransform (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-safe-area-context:mergeReleaseShaders UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:mergeReleaseShaders' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:mergeReleaseShaders' as it is up-to-date.
+Resolve mutations for :react-native-safe-area-context:compileReleaseShaders (Thread[included builds,5,main]) started.
+:react-native-safe-area-context:compileReleaseShaders (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :react-native-safe-area-context:compileReleaseShaders NO-SOURCE
+Skipping task ':react-native-safe-area-context:compileReleaseShaders' as it has no source files and no previous output files.
+Resolve mutations for :react-native-safe-area-context:generateReleaseAssets (Thread[Execution worker Thread 6,5,main]) started.
+Resolve mutations for :app:mergeLibDexMlkitDebugOptimized (Thread[Execution worker,5,main]) started.
+:app:mergeLibDexMlkitDebugOptimized (Thread[Execution worker,5,main]) started.
+
+> Task :app:mergeLibDexMlkitDebugOptimized UP-TO-DATE
+Caching disabled for task ':app:mergeLibDexMlkitDebugOptimized' because:
+  Build cache is disabled
+Skipping task ':app:mergeLibDexMlkitDebugOptimized' as it is up-to-date.
+:react-native-safe-area-context:generateReleaseAssets (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-safe-area-context:generateReleaseAssets UP-TO-DATE
+Skipping task ':react-native-safe-area-context:generateReleaseAssets' as it has no actions.
+Resolve mutations for :react-native-safe-area-context:packageReleaseAssets (Thread[Execution worker,5,main]) started.
+:react-native-safe-area-context:packageReleaseAssets (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-safe-area-context:packageReleaseAssets UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:packageReleaseAssets' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:packageReleaseAssets' as it is up-to-date.
+work action resolve out (project :react-native-safe-area-context) (Thread[Execution worker,5,main]) started.
+Resolve mutations for :react-native-screens:mergeReleaseShaders (Thread[Execution worker,5,main]) started.
+:react-native-screens:mergeReleaseShaders (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-screens:mergeReleaseShaders UP-TO-DATE
+Caching disabled for task ':react-native-screens:mergeReleaseShaders' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:mergeReleaseShaders' as it is up-to-date.
+Resolve mutations for :react-native-screens:compileReleaseShaders (Thread[Execution worker,5,main]) started.
+:react-native-screens:compileReleaseShaders (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-screens:compileReleaseShaders NO-SOURCE
+Skipping task ':react-native-screens:compileReleaseShaders' as it has no source files and no previous output files.
+Resolve mutations for :react-native-screens:generateReleaseAssets (Thread[Execution worker,5,main]) started.
+:react-native-screens:generateReleaseAssets (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-screens:generateReleaseAssets UP-TO-DATE
+Skipping task ':react-native-screens:generateReleaseAssets' as it has no actions.
+Resolve mutations for :react-native-screens:packageReleaseAssets (Thread[Execution worker,5,main]) started.
+:react-native-screens:packageReleaseAssets (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-screens:packageReleaseAssets UP-TO-DATE
+Caching disabled for task ':react-native-screens:packageReleaseAssets' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:packageReleaseAssets' as it is up-to-date.
+work action resolve out (project :react-native-screens) (Thread[Execution worker,5,main]) started.
+Resolve mutations for :react-native-svg:mergeReleaseShaders (Thread[Execution worker,5,main]) started.
+:react-native-svg:mergeReleaseShaders (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-svg:mergeReleaseShaders UP-TO-DATE
+Caching disabled for task ':react-native-svg:mergeReleaseShaders' because:
+  Build cache is disabled
+Skipping task ':react-native-svg:mergeReleaseShaders' as it is up-to-date.
+Resolve mutations for :react-native-svg:compileReleaseShaders (Thread[Execution worker,5,main]) started.
+:react-native-svg:compileReleaseShaders (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-svg:compileReleaseShaders NO-SOURCE
+Skipping task ':react-native-svg:compileReleaseShaders' as it has no source files and no previous output files.
+Resolve mutations for :react-native-svg:generateReleaseAssets (Thread[Execution worker,5,main]) started.
+:react-native-svg:generateReleaseAssets (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-svg:generateReleaseAssets UP-TO-DATE
+Skipping task ':react-native-svg:generateReleaseAssets' as it has no actions.
+Resolve mutations for :react-native-svg:packageReleaseAssets (Thread[Execution worker,5,main]) started.
+:react-native-svg:packageReleaseAssets (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-svg:packageReleaseAssets UP-TO-DATE
+Caching disabled for task ':react-native-svg:packageReleaseAssets' because:
+  Build cache is disabled
+Skipping task ':react-native-svg:packageReleaseAssets' as it is up-to-date.
+work action resolve out (project :react-native-svg) (Thread[Execution worker,5,main]) started.
+Resolve mutations for :app:mergeMlkitDebugOptimizedAssets (Thread[Execution worker,5,main]) started.
+:app:mergeMlkitDebugOptimizedAssets (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :app:mergeMlkitDebugOptimizedAssets UP-TO-DATE
+Caching disabled for task ':app:mergeMlkitDebugOptimizedAssets' because:
+  Build cache is disabled
+Skipping task ':app:mergeMlkitDebugOptimizedAssets' as it is up-to-date.
+Resolve mutations for :react-native-ml-kit_text-recognition:bundleLibRuntimeToJarRelease (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-ml-kit_text-recognition:bundleLibRuntimeToJarRelease (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:bundleLibRuntimeToJarRelease UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:bundleLibRuntimeToJarRelease' because:
+  Build cache is disabled
+  Tasks that merge files into a directory/jar without further processing usually do not benefit from caching. Also, their outputs are usually large, which would consume a lot of space when cached.
+Skipping task ':react-native-ml-kit_text-recognition:bundleLibRuntimeToJarRelease' as it is up-to-date.
+work action resolve classes.jar (project :react-native-ml-kit_text-recognition) (Thread[Execution worker Thread 3,5,main]) started.
+IdentityTransform (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :react-native-camera:bundleLibRuntimeToJarMlkitRelease (Thread[Execution worker Thread 7,5,main]) started.
+:react-native-camera:bundleLibRuntimeToJarMlkitRelease (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :react-native-camera:bundleLibRuntimeToJarMlkitRelease UP-TO-DATE
+Caching disabled for task ':react-native-camera:bundleLibRuntimeToJarMlkitRelease' because:
+  Build cache is disabled
+  Tasks that merge files into a directory/jar without further processing usually do not benefit from caching. Also, their outputs are usually large, which would consume a lot of space when cached.
+Skipping task ':react-native-camera:bundleLibRuntimeToJarMlkitRelease' as it is up-to-date.
+work action resolve classes.jar (project :react-native-camera) (Thread[Execution worker Thread 7,5,main]) started.
+IdentityTransform (Thread[Execution worker Thread 11,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:bundleLibRuntimeToJarRelease (Thread[Execution worker Thread 7,5,main]) started.
+DexingNoClasspathTransform (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-safe-area-context:bundleLibRuntimeToJarRelease (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-safe-area-context:bundleLibRuntimeToJarRelease UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:bundleLibRuntimeToJarRelease' because:
+  Build cache is disabled
+  Tasks that merge files into a directory/jar without further processing usually do not benefit from caching. Also, their outputs are usually large, which would consume a lot of space when cached.
+Skipping task ':react-native-safe-area-context:bundleLibRuntimeToJarRelease' as it is up-to-date.
+work action resolve classes.jar (project :react-native-safe-area-context) (Thread[Execution worker Thread 4,5,main]) started.
+IdentityTransform (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-screens:bundleLibRuntimeToJarRelease (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:bundleLibRuntimeToJarRelease (Thread[Execution worker Thread 2,5,main]) started.
+DexingNoClasspathTransform (Thread[Execution worker Thread 11,5,main]) started.
+DexingNoClasspathTransform (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-screens:bundleLibRuntimeToJarRelease UP-TO-DATE
+Caching disabled for task ':react-native-screens:bundleLibRuntimeToJarRelease' because:
+  Build cache is disabled
+  Tasks that merge files into a directory/jar without further processing usually do not benefit from caching. Also, their outputs are usually large, which would consume a lot of space when cached.
+Skipping task ':react-native-screens:bundleLibRuntimeToJarRelease' as it is up-to-date.
+work action resolve classes.jar (project :react-native-screens) (Thread[Execution worker Thread 2,5,main]) started.
+IdentityTransform (Thread[Execution worker Thread 9,5,main]) started.
+Resolve mutations for :react-native-svg:bundleLibRuntimeToJarRelease (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-svg:bundleLibRuntimeToJarRelease (Thread[Execution worker Thread 2,5,main]) started.
+
+> Transform classes.jar (project :react-native-ml-kit_text-recognition) with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/@react-native-ml-kit/text-recognition/android/build/intermediates/runtime_library_classes_jar/release/classes.jar because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/@react-native-ml-kit/text-recognition/android/build/intermediates/runtime_library_classes_jar/release/classes.jar as it is up-to-date.
+DexingOutputSplitTransform (Thread[Execution worker Thread 3,5,main]) started.
+DexingNoClasspathTransform (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :react-native-svg:bundleLibRuntimeToJarRelease UP-TO-DATE
+Caching disabled for task ':react-native-svg:bundleLibRuntimeToJarRelease' because:
+  Build cache is disabled
+  Tasks that merge files into a directory/jar without further processing usually do not benefit from caching. Also, their outputs are usually large, which would consume a lot of space when cached.
+Skipping task ':react-native-svg:bundleLibRuntimeToJarRelease' as it is up-to-date.
+
+> Transform classes.jar (project :react-native-camera) with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-camera/android/build/intermediates/runtime_library_classes_jar/mlkitRelease/classes.jar because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-camera/android/build/intermediates/runtime_library_classes_jar/mlkitRelease/classes.jar as it is up-to-date.
+work action resolve classes.jar (project :react-native-svg) (Thread[Execution worker Thread 2,5,main]) started.
+DexingOutputSplitTransform (Thread[Execution worker Thread 11,5,main]) started.
+IdentityTransform (Thread[Execution worker Thread 2,5,main]) started.
+Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 6,5,main]) started.
+
+> Transform classes.jar (project :react-native-safe-area-context) with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-safe-area-context/android/build/intermediates/runtime_library_classes_jar/release/classes.jar because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-safe-area-context/android/build/intermediates/runtime_library_classes_jar/release/classes.jar as it is up-to-date.
+DexingOutputSplitTransform (Thread[Execution worker Thread 4,5,main]) started.
+:app:checkKotlinGradlePluginConfigurationErrors (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':app:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :app:generateMlkitDebugOptimizedBuildConfig (Thread[Execution worker Thread 5,5,main]) started.
+:app:generateMlkitDebugOptimizedBuildConfig (Thread[Execution worker Thread 5,5,main]) started.
+DexingNoClasspathTransform (Thread[Execution worker Thread 6,5,main]) started.
+
+> Transform classes.jar (project :react-native-screens) with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/build/intermediates/runtime_library_classes_jar/release/classes.jar because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/build/intermediates/runtime_library_classes_jar/release/classes.jar as it is up-to-date.
+DexingOutputSplitTransform (Thread[Execution worker Thread 9,5,main]) started.
+
+> Task :app:generateMlkitDebugOptimizedBuildConfig UP-TO-DATE
+Caching disabled for task ':app:generateMlkitDebugOptimizedBuildConfig' because:
+  Build cache is disabled
+Skipping task ':app:generateMlkitDebugOptimizedBuildConfig' as it is up-to-date.
+Resolve mutations for :react-native-camera:writeMlkitReleaseAarMetadata (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-camera:writeMlkitReleaseAarMetadata (Thread[Execution worker Thread 5,5,main]) started.
+
+> Transform classes.jar (project :react-native-svg) with DexingNoClasspathTransform
+Caching disabled for DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-svg/android/build/intermediates/runtime_library_classes_jar/release/classes.jar because:
+  Build cache is disabled
+Skipping DexingNoClasspathTransform: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-svg/android/build/intermediates/runtime_library_classes_jar/release/classes.jar as it is up-to-date.
+DexingOutputSplitTransform (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :react-native-camera:writeMlkitReleaseAarMetadata UP-TO-DATE
+Caching disabled for task ':react-native-camera:writeMlkitReleaseAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-camera:writeMlkitReleaseAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :react-native-camera) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :react-native-ml-kit_text-recognition:writeReleaseAarMetadata (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-ml-kit_text-recognition:writeReleaseAarMetadata (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:writeReleaseAarMetadata UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:writeReleaseAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-ml-kit_text-recognition:writeReleaseAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :react-native-ml-kit_text-recognition) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:writeReleaseAarMetadata (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-safe-area-context:writeReleaseAarMetadata (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-safe-area-context:writeReleaseAarMetadata UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:writeReleaseAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-safe-area-context:writeReleaseAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :react-native-safe-area-context) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :react-native-screens:writeReleaseAarMetadata (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-screens:writeReleaseAarMetadata (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-screens:writeReleaseAarMetadata UP-TO-DATE
+Caching disabled for task ':react-native-screens:writeReleaseAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-screens:writeReleaseAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :react-native-screens) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :react-native-svg:writeReleaseAarMetadata (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-svg:writeReleaseAarMetadata (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-svg:writeReleaseAarMetadata UP-TO-DATE
+Caching disabled for task ':react-native-svg:writeReleaseAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-svg:writeReleaseAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :react-native-svg) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :app:checkMlkitDebugOptimizedAarMetadata (Thread[Execution worker Thread 5,5,main]) started.
+:app:checkMlkitDebugOptimizedAarMetadata (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:checkMlkitDebugOptimizedAarMetadata UP-TO-DATE
+Caching disabled for task ':app:checkMlkitDebugOptimizedAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:checkMlkitDebugOptimizedAarMetadata' as it is up-to-date.
+Resolve mutations for :app:packageMlkitDebugOptimizedResources (Thread[Execution worker Thread 5,5,main]) started.
+:app:packageMlkitDebugOptimizedResources (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:packageMlkitDebugOptimizedResources UP-TO-DATE
+Caching disabled for task ':app:packageMlkitDebugOptimizedResources' because:
+  Build cache is disabled
+Skipping task ':app:packageMlkitDebugOptimizedResources' as it is up-to-date.
+Resolve mutations for :app:parseMlkitDebugOptimizedLocalResources (Thread[Execution worker Thread 5,5,main]) started.
+:app:parseMlkitDebugOptimizedLocalResources (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:parseMlkitDebugOptimizedLocalResources UP-TO-DATE
+Caching disabled for task ':app:parseMlkitDebugOptimizedLocalResources' because:
+  Build cache is disabled
+Skipping task ':app:parseMlkitDebugOptimizedLocalResources' as it is up-to-date.
+Resolve mutations for :app:processMlkitDebugOptimizedManifestForPackage (Thread[Execution worker Thread 5,5,main]) started.
+:app:processMlkitDebugOptimizedManifestForPackage (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :app:processMlkitDebugOptimizedManifestForPackage UP-TO-DATE
+Custom actions are attached to task ':app:processMlkitDebugOptimizedManifestForPackage'.
+Caching disabled for task ':app:processMlkitDebugOptimizedManifestForPackage' because:
+  Build cache is disabled
+Skipping task ':app:processMlkitDebugOptimizedManifestForPackage' as it is up-to-date.
+Resolve mutations for :app:processMlkitDebugOptimizedResources (Thread[Execution worker Thread 5,5,main]) started.
+:app:processMlkitDebugOptimizedResources (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:processMlkitDebugOptimizedResources UP-TO-DATE
+Caching disabled for task ':app:processMlkitDebugOptimizedResources' because:
+  Build cache is disabled
+Skipping task ':app:processMlkitDebugOptimizedResources' as it is up-to-date.
+Resolve mutations for :react-native-camera:bundleLibCompileToJarMlkitRelease (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-camera:bundleLibCompileToJarMlkitRelease (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-camera:bundleLibCompileToJarMlkitRelease UP-TO-DATE
+Caching disabled for task ':react-native-camera:bundleLibCompileToJarMlkitRelease' because:
+  Build cache is disabled
+  Tasks that merge files into a directory/jar without further processing usually do not benefit from caching. Also, their outputs are usually large, which would consume a lot of space when cached.
+Skipping task ':react-native-camera:bundleLibCompileToJarMlkitRelease' as it is up-to-date.
+work action resolve classes.jar (project :react-native-camera) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :react-native-ml-kit_text-recognition:bundleLibCompileToJarRelease (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-ml-kit_text-recognition:bundleLibCompileToJarRelease (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:bundleLibCompileToJarRelease UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:bundleLibCompileToJarRelease' because:
+  Build cache is disabled
+  Tasks that merge files into a directory/jar without further processing usually do not benefit from caching. Also, their outputs are usually large, which would consume a lot of space when cached.
+Skipping task ':react-native-ml-kit_text-recognition:bundleLibCompileToJarRelease' as it is up-to-date.
+work action resolve classes.jar (project :react-native-ml-kit_text-recognition) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:bundleLibCompileToJarRelease (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-safe-area-context:bundleLibCompileToJarRelease (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-safe-area-context:bundleLibCompileToJarRelease UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:bundleLibCompileToJarRelease' because:
+  Build cache is disabled
+  Tasks that merge files into a directory/jar without further processing usually do not benefit from caching. Also, their outputs are usually large, which would consume a lot of space when cached.
+Skipping task ':react-native-safe-area-context:bundleLibCompileToJarRelease' as it is up-to-date.
+work action resolve classes.jar (project :react-native-safe-area-context) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :react-native-screens:bundleLibCompileToJarRelease (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-screens:bundleLibCompileToJarRelease (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-screens:bundleLibCompileToJarRelease UP-TO-DATE
+Caching disabled for task ':react-native-screens:bundleLibCompileToJarRelease' because:
+  Build cache is disabled
+  Tasks that merge files into a directory/jar without further processing usually do not benefit from caching. Also, their outputs are usually large, which would consume a lot of space when cached.
+Skipping task ':react-native-screens:bundleLibCompileToJarRelease' as it is up-to-date.
+work action resolve classes.jar (project :react-native-screens) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :react-native-svg:bundleLibCompileToJarRelease (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-svg:bundleLibCompileToJarRelease (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-svg:bundleLibCompileToJarRelease UP-TO-DATE
+Caching disabled for task ':react-native-svg:bundleLibCompileToJarRelease' because:
+  Build cache is disabled
+  Tasks that merge files into a directory/jar without further processing usually do not benefit from caching. Also, their outputs are usually large, which would consume a lot of space when cached.
+Skipping task ':react-native-svg:bundleLibCompileToJarRelease' as it is up-to-date.
+work action resolve classes.jar (project :react-native-svg) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :app:compileMlkitDebugOptimizedKotlin (Thread[Execution worker Thread 5,5,main]) started.
+:app:compileMlkitDebugOptimizedKotlin (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:compileMlkitDebugOptimizedKotlin UP-TO-DATE
+Caching disabled for task ':app:compileMlkitDebugOptimizedKotlin' because:
+  Build cache is disabled
+Skipping task ':app:compileMlkitDebugOptimizedKotlin' as it is up-to-date.
+Resolve mutations for :app:javaPreCompileMlkitDebugOptimized (Thread[Execution worker Thread 5,5,main]) started.
+:app:javaPreCompileMlkitDebugOptimized (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:javaPreCompileMlkitDebugOptimized UP-TO-DATE
+Caching disabled for task ':app:javaPreCompileMlkitDebugOptimized' because:
+  Build cache is disabled
+Skipping task ':app:javaPreCompileMlkitDebugOptimized' as it is up-to-date.
+Resolve mutations for :app:compileMlkitDebugOptimizedJavaWithJavac (Thread[Execution worker Thread 5,5,main]) started.
+:app:compileMlkitDebugOptimizedJavaWithJavac (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:compileMlkitDebugOptimizedJavaWithJavac UP-TO-DATE
+Custom actions are attached to task ':app:compileMlkitDebugOptimizedJavaWithJavac'.
+Caching disabled for task ':app:compileMlkitDebugOptimizedJavaWithJavac' because:
+  Build cache is disabled
+Skipping task ':app:compileMlkitDebugOptimizedJavaWithJavac' as it is up-to-date.
+No compile result for :app:compileMlkitDebugOptimizedJavaWithJavac
+No compile result for :app:compileMlkitDebugOptimizedJavaWithJavac
+Resolve mutations for :app:dexBuilderMlkitDebugOptimized (Thread[Execution worker Thread 5,5,main]) started.
+:app:dexBuilderMlkitDebugOptimized (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:dexBuilderMlkitDebugOptimized UP-TO-DATE
+Caching disabled for task ':app:dexBuilderMlkitDebugOptimized' because:
+  Build cache is disabled
+Skipping task ':app:dexBuilderMlkitDebugOptimized' as it is up-to-date.
+Resolve mutations for :app:mergeMlkitDebugOptimizedGlobalSynthetics (Thread[Execution worker Thread 5,5,main]) started.
+:app:mergeMlkitDebugOptimizedGlobalSynthetics (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:mergeMlkitDebugOptimizedGlobalSynthetics UP-TO-DATE
+Caching disabled for task ':app:mergeMlkitDebugOptimizedGlobalSynthetics' because:
+  Build cache is disabled
+Skipping task ':app:mergeMlkitDebugOptimizedGlobalSynthetics' as it is up-to-date.
+Resolve mutations for :app:processMlkitDebugOptimizedJavaRes (Thread[Execution worker Thread 5,5,main]) started.
+:app:processMlkitDebugOptimizedJavaRes (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :app:processMlkitDebugOptimizedJavaRes UP-TO-DATE
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/src/main/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/src/mlkit/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/src/debugOptimized/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/src/mlkitDebugOptimized/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/src/main/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/src/mlkit/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/src/debugOptimized/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/src/mlkitDebugOptimized/resources', not found
+Caching disabled for task ':app:processMlkitDebugOptimizedJavaRes' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:processMlkitDebugOptimizedJavaRes' as it is up-to-date.
+Resolve mutations for :react-native-camera:processMlkitReleaseJavaRes (Thread[Execution worker Thread 5,5,main]) started.
+:react-native-camera:processMlkitReleaseJavaRes (Thread[Execution worker Thread 5,5,main]) started.
+
+> Task :react-native-camera:processMlkitReleaseJavaRes NO-SOURCE
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-camera/android/src/main/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-camera/android/src/mlkit/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-camera/android/src/release/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-camera/android/src/mlkitRelease/resources', not found
+Skipping task ':react-native-camera:processMlkitReleaseJavaRes' as it has no source files and no previous output files.
+work action resolve out (project :react-native-camera) (Thread[Execution worker Thread 5,5,main]) started.
+Resolve mutations for :react-native-ml-kit_text-recognition:processReleaseJavaRes (Thread[Execution worker,5,main]) started.
+:react-native-ml-kit_text-recognition:processReleaseJavaRes (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:processReleaseJavaRes NO-SOURCE
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/@react-native-ml-kit/text-recognition/android/src/main/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/@react-native-ml-kit/text-recognition/android/src/release/resources', not found
+Skipping task ':react-native-ml-kit_text-recognition:processReleaseJavaRes' as it has no source files and no previous output files.
+work action resolve out (project :react-native-ml-kit_text-recognition) (Thread[Execution worker,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:processReleaseJavaRes (Thread[Execution worker,5,main]) started.
+:react-native-safe-area-context:processReleaseJavaRes (Thread[Execution worker,5,main]) started.
+
+> Task :react-native-safe-area-context:processReleaseJavaRes UP-TO-DATE
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-safe-area-context/android/src/main/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-safe-area-context/android/src/release/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-safe-area-context/android/src/main/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-safe-area-context/android/src/release/resources', not found
+Caching disabled for task ':react-native-safe-area-context:processReleaseJavaRes' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-safe-area-context:processReleaseJavaRes' as it is up-to-date.
+work action resolve out (project :react-native-safe-area-context) (Thread[Execution worker,5,main]) started.
+Resolve mutations for :react-native-screens:processReleaseJavaRes (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-screens:processReleaseJavaRes (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-screens:processReleaseJavaRes UP-TO-DATE
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/src/main/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/src/release/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/src/main/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/src/release/resources', not found
+Caching disabled for task ':react-native-screens:processReleaseJavaRes' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-screens:processReleaseJavaRes' as it is up-to-date.
+work action resolve out (project :react-native-screens) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :react-native-svg:processReleaseJavaRes (Thread[Execution worker Thread 4,5,main]) started.
+:react-native-svg:processReleaseJavaRes (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :react-native-svg:processReleaseJavaRes NO-SOURCE
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-svg/android/src/main/resources', not found
+file or directory '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-svg/android/src/release/resources', not found
+Skipping task ':react-native-svg:processReleaseJavaRes' as it has no source files and no previous output files.
+work action resolve out (project :react-native-svg) (Thread[Execution worker Thread 4,5,main]) started.
+Resolve mutations for :app:mergeMlkitDebugOptimizedJavaResource (Thread[Execution worker Thread 4,5,main]) started.
+:app:mergeMlkitDebugOptimizedJavaResource (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:mergeMlkitDebugOptimizedJavaResource UP-TO-DATE
+Caching disabled for task ':app:mergeMlkitDebugOptimizedJavaResource' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:mergeMlkitDebugOptimizedJavaResource' as it is up-to-date.
+Resolve mutations for :app:mergeProjectDexMlkitDebugOptimized (Thread[Execution worker Thread 4,5,main]) started.
+:app:mergeProjectDexMlkitDebugOptimized (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:mergeProjectDexMlkitDebugOptimized UP-TO-DATE
+Caching disabled for task ':app:mergeProjectDexMlkitDebugOptimized' because:
+  Build cache is disabled
+Skipping task ':app:mergeProjectDexMlkitDebugOptimized' as it is up-to-date.
+Resolve mutations for :app:configureCMakeRelease[arm64-v8a] (Thread[Execution worker Thread 4,5,main]) started.
+:app:configureCMakeRelease[arm64-v8a] (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:configureCMakeRelease[arm64-v8a]
+Caching disabled for task ':app:configureCMakeRelease[arm64-v8a]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:configureCMakeRelease[arm64-v8a]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt mlkitDebugOptimized|arm64-v8a : Start JSON generation. Platform version: 24 min SDK version: arm64-v8a
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt mlkitDebugOptimized|arm64-v8a : JSON '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/.cxx/Release/2d485k50/arm64-v8a/android_gradle_build.json' was up-to-date
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt mlkitDebugOptimized|arm64-v8a : JSON generation completed without problems
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt mlkitDebugOptimized|arm64-v8a : Writing build model to /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/build/intermediates/cxx/Release/2d485k50/logs/arm64-v8a/build_model.json
+Resolve mutations for :app:buildCMakeRelease[arm64-v8a] (Thread[Execution worker Thread 4,5,main]) started.
+:app:buildCMakeRelease[arm64-v8a] (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:buildCMakeRelease[arm64-v8a]
+Caching disabled for task ':app:buildCMakeRelease[arm64-v8a]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:buildCMakeRelease[arm64-v8a]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: starting build
+C/C++: reading expected JSONs
+C/C++: done reading expected JSONs
+C/C++: executing build commands for targets that produce .so files or executables
+C/C++: evaluate miniconfig
+C/C++: evaluate library appmodules (arm64-v8a)
+C/C++: building target library appmodules because no targets are specified.
+C/C++: about to build targets appmodules
+C/C++: Build appmodules
+C/C++: /Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/.cxx/Release/2d485k50/arm64-v8a \
+  appmodules
+
+Starting process 'command '/Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja''. Working directory: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app Command: /Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja -C /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/.cxx/Release/2d485k50/arm64-v8a appmodules
+Successfully started process 'command '/Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja''
+C/C++: check expected build outputs
+C/C++: build complete
+Resolve mutations for :app:configureCMakeRelease[armeabi-v7a] (Thread[Execution worker Thread 4,5,main]) started.
+:app:configureCMakeRelease[armeabi-v7a] (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:configureCMakeRelease[armeabi-v7a]
+Caching disabled for task ':app:configureCMakeRelease[armeabi-v7a]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:configureCMakeRelease[armeabi-v7a]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt mlkitDebugOptimized|armeabi-v7a : Start JSON generation. Platform version: 24 min SDK version: armeabi-v7a
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt mlkitDebugOptimized|armeabi-v7a : JSON '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/.cxx/Release/2d485k50/armeabi-v7a/android_gradle_build.json' was up-to-date
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt mlkitDebugOptimized|armeabi-v7a : JSON generation completed without problems
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt mlkitDebugOptimized|armeabi-v7a : Writing build model to /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/build/intermediates/cxx/Release/2d485k50/logs/armeabi-v7a/build_model.json
+Resolve mutations for :app:buildCMakeRelease[armeabi-v7a] (Thread[Execution worker Thread 4,5,main]) started.
+:app:buildCMakeRelease[armeabi-v7a] (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:buildCMakeRelease[armeabi-v7a]
+Caching disabled for task ':app:buildCMakeRelease[armeabi-v7a]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:buildCMakeRelease[armeabi-v7a]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: starting build
+C/C++: reading expected JSONs
+C/C++: done reading expected JSONs
+C/C++: executing build commands for targets that produce .so files or executables
+C/C++: evaluate miniconfig
+C/C++: evaluate library appmodules (armeabi-v7a)
+C/C++: building target library appmodules because no targets are specified.
+C/C++: about to build targets appmodules
+C/C++: Build appmodules
+C/C++: /Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/.cxx/Release/2d485k50/armeabi-v7a \
+  appmodules
+
+Starting process 'command '/Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja''. Working directory: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app Command: /Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja -C /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/.cxx/Release/2d485k50/armeabi-v7a appmodules
+Successfully started process 'command '/Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja''
+C/C++: check expected build outputs
+C/C++: build complete
+Resolve mutations for :app:configureCMakeRelease[x86] (Thread[Execution worker Thread 4,5,main]) started.
+:app:configureCMakeRelease[x86] (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:configureCMakeRelease[x86]
+Caching disabled for task ':app:configureCMakeRelease[x86]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:configureCMakeRelease[x86]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt mlkitDebugOptimized|x86 : Start JSON generation. Platform version: 24 min SDK version: x86
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt mlkitDebugOptimized|x86 : JSON '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/.cxx/Release/2d485k50/x86/android_gradle_build.json' was up-to-date
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt mlkitDebugOptimized|x86 : JSON generation completed without problems
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt mlkitDebugOptimized|x86 : Writing build model to /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/build/intermediates/cxx/Release/2d485k50/logs/x86/build_model.json
+Resolve mutations for :app:buildCMakeRelease[x86] (Thread[Execution worker Thread 4,5,main]) started.
+:app:buildCMakeRelease[x86] (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:buildCMakeRelease[x86]
+Caching disabled for task ':app:buildCMakeRelease[x86]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:buildCMakeRelease[x86]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: starting build
+C/C++: reading expected JSONs
+C/C++: done reading expected JSONs
+C/C++: executing build commands for targets that produce .so files or executables
+C/C++: evaluate miniconfig
+C/C++: evaluate library appmodules (x86)
+C/C++: building target library appmodules because no targets are specified.
+C/C++: about to build targets appmodules
+C/C++: Build appmodules
+C/C++: /Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/.cxx/Release/2d485k50/x86 \
+  appmodules
+
+Starting process 'command '/Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja''. Working directory: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app Command: /Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja -C /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/.cxx/Release/2d485k50/x86 appmodules
+Successfully started process 'command '/Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja''
+C/C++: check expected build outputs
+C/C++: build complete
+Resolve mutations for :app:configureCMakeRelease[x86_64] (Thread[Execution worker Thread 4,5,main]) started.
+:app:configureCMakeRelease[x86_64] (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:configureCMakeRelease[x86_64]
+Caching disabled for task ':app:configureCMakeRelease[x86_64]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:configureCMakeRelease[x86_64]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt mlkitDebugOptimized|x86_64 : Start JSON generation. Platform version: 24 min SDK version: x86_64
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt mlkitDebugOptimized|x86_64 : JSON '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/.cxx/Release/2d485k50/x86_64/android_gradle_build.json' was up-to-date
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt mlkitDebugOptimized|x86_64 : JSON generation completed without problems
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt mlkitDebugOptimized|x86_64 : Writing build model to /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/build/intermediates/cxx/Release/2d485k50/logs/x86_64/build_model.json
+Resolve mutations for :app:buildCMakeRelease[x86_64] (Thread[Execution worker Thread 4,5,main]) started.
+:app:buildCMakeRelease[x86_64] (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:buildCMakeRelease[x86_64]
+Caching disabled for task ':app:buildCMakeRelease[x86_64]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:buildCMakeRelease[x86_64]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: starting build
+C/C++: reading expected JSONs
+C/C++: done reading expected JSONs
+C/C++: executing build commands for targets that produce .so files or executables
+C/C++: evaluate miniconfig
+C/C++: evaluate library appmodules (x86_64)
+C/C++: building target library appmodules because no targets are specified.
+C/C++: about to build targets appmodules
+C/C++: Build appmodules
+C/C++: /Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/.cxx/Release/2d485k50/x86_64 \
+  appmodules
+
+Starting process 'command '/Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja''. Working directory: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app Command: /Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja -C /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/app/.cxx/Release/2d485k50/x86_64 appmodules
+Successfully started process 'command '/Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja''
+C/C++: check expected build outputs
+C/C++: build complete
+Resolve mutations for :app:mergeMlkitDebugOptimizedJniLibFolders (Thread[Execution worker Thread 4,5,main]) started.
+:app:mergeMlkitDebugOptimizedJniLibFolders (Thread[Execution worker Thread 4,5,main]) started.
+
+> Task :app:mergeMlkitDebugOptimizedJniLibFolders UP-TO-DATE
+Caching disabled for task ':app:mergeMlkitDebugOptimizedJniLibFolders' because:
+  Build cache is disabled
+Skipping task ':app:mergeMlkitDebugOptimizedJniLibFolders' as it is up-to-date.
+Resolve mutations for :react-native-camera:mergeMlkitReleaseJniLibFolders (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-camera:mergeMlkitReleaseJniLibFolders (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-camera:mergeMlkitReleaseJniLibFolders UP-TO-DATE
+Caching disabled for task ':react-native-camera:mergeMlkitReleaseJniLibFolders' because:
+  Build cache is disabled
+Skipping task ':react-native-camera:mergeMlkitReleaseJniLibFolders' as it is up-to-date.
+Resolve mutations for :react-native-camera:mergeMlkitReleaseNativeLibs (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-camera:mergeMlkitReleaseNativeLibs (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-camera:mergeMlkitReleaseNativeLibs NO-SOURCE
+Skipping task ':react-native-camera:mergeMlkitReleaseNativeLibs' as it has no source files and no previous output files.
+Resolve mutations for :react-native-camera:copyMlkitReleaseJniLibsProjectOnly (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-camera:copyMlkitReleaseJniLibsProjectOnly (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-camera:copyMlkitReleaseJniLibsProjectOnly UP-TO-DATE
+Caching disabled for task ':react-native-camera:copyMlkitReleaseJniLibsProjectOnly' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-camera:copyMlkitReleaseJniLibsProjectOnly' as it is up-to-date.
+work action resolve jni (project :react-native-camera) (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :react-native-ml-kit_text-recognition:mergeReleaseJniLibFolders (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-ml-kit_text-recognition:mergeReleaseJniLibFolders (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:mergeReleaseJniLibFolders UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:mergeReleaseJniLibFolders' because:
+  Build cache is disabled
+Skipping task ':react-native-ml-kit_text-recognition:mergeReleaseJniLibFolders' as it is up-to-date.
+Resolve mutations for :react-native-ml-kit_text-recognition:mergeReleaseNativeLibs (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-ml-kit_text-recognition:mergeReleaseNativeLibs (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:mergeReleaseNativeLibs NO-SOURCE
+Skipping task ':react-native-ml-kit_text-recognition:mergeReleaseNativeLibs' as it has no source files and no previous output files.
+Resolve mutations for :react-native-ml-kit_text-recognition:copyReleaseJniLibsProjectOnly (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-ml-kit_text-recognition:copyReleaseJniLibsProjectOnly (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-ml-kit_text-recognition:copyReleaseJniLibsProjectOnly UP-TO-DATE
+Caching disabled for task ':react-native-ml-kit_text-recognition:copyReleaseJniLibsProjectOnly' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-ml-kit_text-recognition:copyReleaseJniLibsProjectOnly' as it is up-to-date.
+work action resolve jni (project :react-native-ml-kit_text-recognition) (Thread[Execution worker Thread 3,5,main]) started.
+Resolve mutations for :react-native-safe-area-context:mergeReleaseJniLibFolders (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-safe-area-context:mergeReleaseJniLibFolders (Thread[Execution worker Thread 3,5,main]) started.
+
+> Task :react-native-safe-area-context:mergeReleaseJniLibFolders UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:mergeReleaseJniLibFolders' because:
+  Build cache is disabled
+Skipping task ':react-native-safe-area-context:mergeReleaseJniLibFolders' as it is up-to-date.
+Resolve mutations for :react-native-safe-area-context:mergeReleaseNativeLibs (Thread[Execution worker Thread 3,5,main]) started.
+:react-native-safe-area-context:mergeReleaseNativeLibs (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-safe-area-context:mergeReleaseNativeLibs NO-SOURCE
+Skipping task ':react-native-safe-area-context:mergeReleaseNativeLibs' as it has no source files and no previous output files.
+Resolve mutations for :react-native-safe-area-context:copyReleaseJniLibsProjectOnly (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-safe-area-context:copyReleaseJniLibsProjectOnly (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-safe-area-context:copyReleaseJniLibsProjectOnly UP-TO-DATE
+Caching disabled for task ':react-native-safe-area-context:copyReleaseJniLibsProjectOnly' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-safe-area-context:copyReleaseJniLibsProjectOnly' as it is up-to-date.
+work action resolve jni (project :react-native-safe-area-context) (Thread[Execution worker Thread 2,5,main]) started.
+Resolve mutations for :react-native-screens:configureCMakeRelWithDebInfo[arm64-v8a] (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:configureCMakeRelWithDebInfo[arm64-v8a] (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-screens:configureCMakeRelWithDebInfo[arm64-v8a]
+Caching disabled for task ':react-native-screens:configureCMakeRelWithDebInfo[arm64-v8a]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':react-native-screens:configureCMakeRelWithDebInfo[arm64-v8a]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/CMakeLists.txt release|arm64-v8a : Start JSON generation. Platform version: 24 min SDK version: arm64-v8a
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/CMakeLists.txt release|arm64-v8a : JSON '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/.cxx/RelWithDebInfo/5h292e1x/arm64-v8a/android_gradle_build.json' was up-to-date
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/CMakeLists.txt release|arm64-v8a : JSON generation completed without problems
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/CMakeLists.txt release|arm64-v8a : Writing build model to /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/build/intermediates/cxx/RelWithDebInfo/5h292e1x/logs/arm64-v8a/build_model.json
+Resolve mutations for :react-native-screens:buildCMakeRelWithDebInfo[arm64-v8a] (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:buildCMakeRelWithDebInfo[arm64-v8a] (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-screens:buildCMakeRelWithDebInfo[arm64-v8a]
+Caching disabled for task ':react-native-screens:buildCMakeRelWithDebInfo[arm64-v8a]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':react-native-screens:buildCMakeRelWithDebInfo[arm64-v8a]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: starting build
+C/C++: reading expected JSONs
+C/C++: done reading expected JSONs
+C/C++: executing build commands for targets that produce .so files or executables
+C/C++: evaluate miniconfig
+C/C++: evaluate library rnscreens (arm64-v8a)
+C/C++: building target library rnscreens because no targets are specified.
+C/C++: about to build targets rnscreens
+C/C++: Build rnscreens
+C/C++: /Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/.cxx/RelWithDebInfo/5h292e1x/arm64-v8a \
+  rnscreens
+
+Starting process 'command '/Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja''. Working directory: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android Command: /Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja -C /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/.cxx/RelWithDebInfo/5h292e1x/arm64-v8a rnscreens
+Successfully started process 'command '/Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja''
+C/C++: check expected build outputs
+C/C++: build complete
+Resolve mutations for :react-native-screens:configureCMakeRelWithDebInfo[armeabi-v7a] (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:configureCMakeRelWithDebInfo[armeabi-v7a] (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-screens:configureCMakeRelWithDebInfo[armeabi-v7a]
+Caching disabled for task ':react-native-screens:configureCMakeRelWithDebInfo[armeabi-v7a]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':react-native-screens:configureCMakeRelWithDebInfo[armeabi-v7a]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/CMakeLists.txt release|armeabi-v7a : Start JSON generation. Platform version: 24 min SDK version: armeabi-v7a
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/CMakeLists.txt release|armeabi-v7a : JSON '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/.cxx/RelWithDebInfo/5h292e1x/armeabi-v7a/android_gradle_build.json' was up-to-date
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/CMakeLists.txt release|armeabi-v7a : JSON generation completed without problems
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/CMakeLists.txt release|armeabi-v7a : Writing build model to /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/build/intermediates/cxx/RelWithDebInfo/5h292e1x/logs/armeabi-v7a/build_model.json
+Resolve mutations for :react-native-screens:buildCMakeRelWithDebInfo[armeabi-v7a] (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:buildCMakeRelWithDebInfo[armeabi-v7a] (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-screens:buildCMakeRelWithDebInfo[armeabi-v7a]
+Caching disabled for task ':react-native-screens:buildCMakeRelWithDebInfo[armeabi-v7a]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':react-native-screens:buildCMakeRelWithDebInfo[armeabi-v7a]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: starting build
+C/C++: reading expected JSONs
+C/C++: done reading expected JSONs
+C/C++: executing build commands for targets that produce .so files or executables
+C/C++: evaluate miniconfig
+C/C++: evaluate library rnscreens (armeabi-v7a)
+C/C++: building target library rnscreens because no targets are specified.
+C/C++: about to build targets rnscreens
+C/C++: Build rnscreens
+C/C++: /Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/.cxx/RelWithDebInfo/5h292e1x/armeabi-v7a \
+  rnscreens
+
+Starting process 'command '/Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja''. Working directory: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android Command: /Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja -C /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/.cxx/RelWithDebInfo/5h292e1x/armeabi-v7a rnscreens
+Successfully started process 'command '/Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja''
+C/C++: check expected build outputs
+C/C++: build complete
+Resolve mutations for :react-native-screens:configureCMakeRelWithDebInfo[x86] (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:configureCMakeRelWithDebInfo[x86] (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-screens:configureCMakeRelWithDebInfo[x86]
+Caching disabled for task ':react-native-screens:configureCMakeRelWithDebInfo[x86]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':react-native-screens:configureCMakeRelWithDebInfo[x86]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/CMakeLists.txt release|x86 : Start JSON generation. Platform version: 24 min SDK version: x86
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/CMakeLists.txt release|x86 : JSON '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/.cxx/RelWithDebInfo/5h292e1x/x86/android_gradle_build.json' was up-to-date
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/CMakeLists.txt release|x86 : JSON generation completed without problems
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/CMakeLists.txt release|x86 : Writing build model to /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/build/intermediates/cxx/RelWithDebInfo/5h292e1x/logs/x86/build_model.json
+Resolve mutations for :react-native-screens:buildCMakeRelWithDebInfo[x86] (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:buildCMakeRelWithDebInfo[x86] (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-screens:buildCMakeRelWithDebInfo[x86]
+Caching disabled for task ':react-native-screens:buildCMakeRelWithDebInfo[x86]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':react-native-screens:buildCMakeRelWithDebInfo[x86]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: starting build
+C/C++: reading expected JSONs
+C/C++: done reading expected JSONs
+C/C++: executing build commands for targets that produce .so files or executables
+C/C++: evaluate miniconfig
+C/C++: evaluate library rnscreens (x86)
+C/C++: building target library rnscreens because no targets are specified.
+C/C++: about to build targets rnscreens
+C/C++: Build rnscreens
+C/C++: /Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/.cxx/RelWithDebInfo/5h292e1x/x86 \
+  rnscreens
+
+Starting process 'command '/Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja''. Working directory: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android Command: /Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja -C /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/.cxx/RelWithDebInfo/5h292e1x/x86 rnscreens
+Successfully started process 'command '/Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja''
+C/C++: check expected build outputs
+C/C++: build complete
+Resolve mutations for :react-native-screens:configureCMakeRelWithDebInfo[x86_64] (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:configureCMakeRelWithDebInfo[x86_64] (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-screens:configureCMakeRelWithDebInfo[x86_64]
+Caching disabled for task ':react-native-screens:configureCMakeRelWithDebInfo[x86_64]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':react-native-screens:configureCMakeRelWithDebInfo[x86_64]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/CMakeLists.txt release|x86_64 : Start JSON generation. Platform version: 24 min SDK version: x86_64
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/CMakeLists.txt release|x86_64 : JSON '/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/.cxx/RelWithDebInfo/5h292e1x/x86_64/android_gradle_build.json' was up-to-date
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/CMakeLists.txt release|x86_64 : JSON generation completed without problems
+C/C++: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/CMakeLists.txt release|x86_64 : Writing build model to /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/build/intermediates/cxx/RelWithDebInfo/5h292e1x/logs/x86_64/build_model.json
+Resolve mutations for :react-native-screens:buildCMakeRelWithDebInfo[x86_64] (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:buildCMakeRelWithDebInfo[x86_64] (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-screens:buildCMakeRelWithDebInfo[x86_64]
+Caching disabled for task ':react-native-screens:buildCMakeRelWithDebInfo[x86_64]' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':react-native-screens:buildCMakeRelWithDebInfo[x86_64]' is not up-to-date because:
+  Task.upToDateWhen is false.
+C/C++: starting build
+C/C++: reading expected JSONs
+C/C++: done reading expected JSONs
+C/C++: executing build commands for targets that produce .so files or executables
+C/C++: evaluate miniconfig
+C/C++: evaluate library rnscreens (x86_64)
+C/C++: building target library rnscreens because no targets are specified.
+C/C++: about to build targets rnscreens
+C/C++: Build rnscreens
+C/C++: /Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/.cxx/RelWithDebInfo/5h292e1x/x86_64 \
+  rnscreens
+
+Starting process 'command '/Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja''. Working directory: /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android Command: /Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja -C /Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/react-native-screens/android/.cxx/RelWithDebInfo/5h292e1x/x86_64 rnscreens
+Successfully started process 'command '/Users/serhii/Library/Android/sdk/cmake/3.22.1/bin/ninja''
+C/C++: check expected build outputs
+C/C++: build complete
+Resolve mutations for :react-native-screens:mergeReleaseJniLibFolders (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:mergeReleaseJniLibFolders (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-screens:mergeReleaseJniLibFolders UP-TO-DATE
+Caching disabled for task ':react-native-screens:mergeReleaseJniLibFolders' because:
+  Build cache is disabled
+Skipping task ':react-native-screens:mergeReleaseJniLibFolders' as it is up-to-date.
+Resolve mutations for :react-native-screens:mergeReleaseNativeLibs (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:mergeReleaseNativeLibs (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-screens:mergeReleaseNativeLibs UP-TO-DATE
+Caching disabled for task ':react-native-screens:mergeReleaseNativeLibs' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-screens:mergeReleaseNativeLibs' as it is up-to-date.
+Resolve mutations for :react-native-screens:copyReleaseJniLibsProjectOnly (Thread[Execution worker Thread 2,5,main]) started.
+:react-native-screens:copyReleaseJniLibsProjectOnly (Thread[Execution worker Thread 2,5,main]) started.
+
+> Task :react-native-screens:copyReleaseJniLibsProjectOnly UP-TO-DATE
+Caching disabled for task ':react-native-screens:copyReleaseJniLibsProjectOnly' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-screens:copyReleaseJniLibsProjectOnly' as it is up-to-date.
+work action resolve jni (project :react-native-screens) (Thread[included builds,5,main]) started.
+Resolve mutations for :react-native-svg:mergeReleaseJniLibFolders (Thread[included builds,5,main]) started.
+:react-native-svg:mergeReleaseJniLibFolders (Thread[included builds,5,main]) started.
+
+> Task :react-native-svg:mergeReleaseJniLibFolders UP-TO-DATE
+Caching disabled for task ':react-native-svg:mergeReleaseJniLibFolders' because:
+  Build cache is disabled
+Skipping task ':react-native-svg:mergeReleaseJniLibFolders' as it is up-to-date.
+Resolve mutations for :react-native-svg:mergeReleaseNativeLibs (Thread[included builds,5,main]) started.
+:react-native-svg:mergeReleaseNativeLibs (Thread[included builds,5,main]) started.
+
+> Task :react-native-svg:mergeReleaseNativeLibs NO-SOURCE
+Skipping task ':react-native-svg:mergeReleaseNativeLibs' as it has no source files and no previous output files.
+Resolve mutations for :react-native-svg:copyReleaseJniLibsProjectOnly (Thread[included builds,5,main]) started.
+:react-native-svg:copyReleaseJniLibsProjectOnly (Thread[included builds,5,main]) started.
+
+> Task :react-native-svg:copyReleaseJniLibsProjectOnly UP-TO-DATE
+Caching disabled for task ':react-native-svg:copyReleaseJniLibsProjectOnly' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':react-native-svg:copyReleaseJniLibsProjectOnly' as it is up-to-date.
+work action resolve jni (project :react-native-svg) (Thread[included builds,5,main]) started.
+Resolve mutations for :app:mergeMlkitDebugOptimizedNativeLibs (Thread[included builds,5,main]) started.
+:app:mergeMlkitDebugOptimizedNativeLibs (Thread[included builds,5,main]) started.
+
+> Task :app:mergeMlkitDebugOptimizedNativeLibs UP-TO-DATE
+Caching disabled for task ':app:mergeMlkitDebugOptimizedNativeLibs' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:mergeMlkitDebugOptimizedNativeLibs' as it is up-to-date.
+Resolve mutations for :app:stripMlkitDebugOptimizedDebugSymbols (Thread[included builds,5,main]) started.
+:app:stripMlkitDebugOptimizedDebugSymbols (Thread[included builds,5,main]) started.
+
+> Task :app:stripMlkitDebugOptimizedDebugSymbols UP-TO-DATE
+Caching disabled for task ':app:stripMlkitDebugOptimizedDebugSymbols' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:stripMlkitDebugOptimizedDebugSymbols' as it is up-to-date.
+Resolve mutations for :app:writeMlkitDebugOptimizedAppMetadata (Thread[included builds,5,main]) started.
+:app:writeMlkitDebugOptimizedAppMetadata (Thread[included builds,5,main]) started.
+
+> Task :app:writeMlkitDebugOptimizedAppMetadata UP-TO-DATE
+Caching disabled for task ':app:writeMlkitDebugOptimizedAppMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:writeMlkitDebugOptimizedAppMetadata' as it is up-to-date.
+Resolve mutations for :app:buildMlkitDebugOptimizedPreBundle (Thread[included builds,5,main]) started.
+:app:buildMlkitDebugOptimizedPreBundle (Thread[included builds,5,main]) started.
+
+> Task :app:buildMlkitDebugOptimizedPreBundle UP-TO-DATE
+Caching disabled for task ':app:buildMlkitDebugOptimizedPreBundle' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:buildMlkitDebugOptimizedPreBundle' as it is up-to-date.
+Build df44616e-96b6-4e80-aab3-0ff0dcee20d7 is closed
+
+[Incubating] Problems report is available at: file:///Users/serhii/Github/NaftogazApp/WaterMeterOCR/android/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 1s
+159 actionable tasks: 16 executed, 143 up-to-date
+Watched directory hierarchies: [/Users/serhii/Github/NaftogazApp/WaterMeterOCR/node_modules/@react-native/gradle-plugin, /Users/serhii/Github/NaftogazApp/WaterMeterOCR/android]
