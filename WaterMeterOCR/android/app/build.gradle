@@ -62,6 +62,7 @@ def enableProguardInReleaseBuilds = false
 android {
     namespace "com.watermeterocr"
     compileSdk rootProject.ext.compileSdkVersion
+    ndkVersion rootProject.ext.ndkVersion
 
     defaultConfig {
         applicationId "com.watermeterocr"
