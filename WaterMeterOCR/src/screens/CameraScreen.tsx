@@ -72,6 +72,11 @@ const CameraScreen: React.FC = () => {
         base64: false,
       });
 
+      // Проверка что ML Kit доступна
+      if (!TextRecognition || typeof TextRecognition.recognize !== 'function') {
+        throw new Error('ML Kit TextRecognition is not available on this device');
+      }
+
       const result = await TextRecognition.recognize(photo.uri);
       const reading = parseReading(result.text);
 
@@ -89,7 +94,22 @@ const CameraScreen: React.FC = () => {
       });
     } catch (error) {
       console.error('Failed to process image', error);
-      Alert.alert('Помилка', 'Не вдалося обробити зображення.');
+      const errorMessage = (error as Error).message || 'Unknown error';
+      
+      // Специальная обработка для разных типов ошибок
+      if (errorMessage.includes('ML Kit') || errorMessage.includes('not available')) {
+        Alert.alert(
+          'Помилка',
+          'ML Kit текст-розпізнавання недоступна на цьому пристрої. Переконайтесь, що встановлені Google Play Services.',
+        );
+      } else if (errorMessage.includes('Camera') || errorMessage.includes('permission')) {
+        Alert.alert(
+          'Помилка камери',
+          'Не вдалося отримати доступ до камери. Перевірте дозволи.',
+        );
+      } else {
+        Alert.alert('Помилка', 'Не вдалося обробити зображення.');
+      }
     } finally {
       setIsProcessing(false);
     }

@@ -124,6 +124,9 @@ dependencies {
         implementation("com.facebook.react:hermes-android")
     }
 
+    // Google ML Kit Text Recognition (latest stable)
+    // Note: v16.0.0 is the latest available stable version
+    // Deprecated API warnings are non-critical and handled by the wrapper
     implementation("com.google.mlkit:text-recognition:16.0.0")
     
     // Native modules

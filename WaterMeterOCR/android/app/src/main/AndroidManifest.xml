@@ -13,6 +13,12 @@
       android:allowBackup="false"
       android:theme="@style/AppTheme"
       android:pageSizeCompat="enabled">
+      
+      <!-- ML Kit Text Recognition dependency metadata -->
+      <meta-data
+        android:name="com.google.mlkit.vision.DEPENDENCIES"
+        android:value="text_recognition" />
+      
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
