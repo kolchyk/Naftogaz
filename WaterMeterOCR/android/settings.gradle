@@ -36,5 +36,3 @@ project(":react-native-safe-area-context").projectDir = new File(rootDir, "../no
 include(":react-native-screens")
 project(":react-native-screens").projectDir = new File(rootDir, "../node_modules/react-native-screens/android")
 
-include(":react-native-svg")
-project(":react-native-svg").projectDir = new File(rootDir, "../node_modules/react-native-svg/android")
