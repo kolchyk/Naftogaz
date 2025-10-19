@@ -1,36 +1,25 @@
 import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import {
   Alert,
-  PermissionsAndroid,
   Platform,
   StyleSheet,
   Text,
   TouchableOpacity,
   View,
 } from 'react-native';
-import {useNavigation} from '@react-navigation/native';
+import {useIsFocused, useNavigation} from '@react-navigation/native';
 import type {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import {RNCamera, type TakePictureResponse} from 'react-native-camera';
+import {
+  Camera,
+  type CameraCaptureError,
+  type PhotoFile,
+  useCameraDevice,
+  useCameraPermission,
+} from 'react-native-vision-camera';
 import TextRecognition from '@react-native-ml-kit/text-recognition';
 
 import {theme} from '@/theme/colors';
 import type {RootStackParamList} from '@/navigation';
-
-const requestPermissions = async () => {
-  if (Platform.OS !== 'android') {
-    return true;
-  }
-
-  try {
-    const result = await PermissionsAndroid.request(
-      PermissionsAndroid.PERMISSIONS.CAMERA,
-    );
-    return result === PermissionsAndroid.RESULTS.GRANTED;
-  } catch (error) {
-    console.warn('Permission error', error);
-    return false;
-  }
-};
 
 const parseReading = (text: string) => {
   const match = text.match(/\d+/g);
@@ -44,21 +33,29 @@ const parseReading = (text: string) => {
 const CameraScreen: React.FC = () => {
   const navigation =
     useNavigation<NativeStackNavigationProp<RootStackParamList, 'Camera'>>();
-  const cameraRef = useRef<RNCamera | null>(null);
+  const cameraRef = useRef<Camera | null>(null);
+  const isFocused = useIsFocused();
   const [isProcessing, setIsProcessing] = useState(false);
-  const [hasPermission, setHasPermission] = useState(false);
+  const {hasPermission, requestPermission} = useCameraPermission();
+  const device = useCameraDevice('back');
 
   useEffect(() => {
-    requestPermissions().then(granted => {
-      setHasPermission(granted);
-      if (!granted) {
-        Alert.alert(
-          'Немає доступу до камери',
-          'Дозвольте використання камери в налаштуваннях пристрою.',
-        );
+    const ensurePermission = async () => {
+      try {
+        const granted = hasPermission || (await requestPermission());
+        if (!granted) {
+          Alert.alert(
+            'Немає доступу до камери',
+            'Дозвольте використання камери в налаштуваннях пристрою.',
+          );
+        }
+      } catch (error) {
+        console.warn('Permission error', error);
       }
-    });
-  }, []);
+    };
+
+    ensurePermission();
+  }, [hasPermission, requestPermission]);
 
   const handlePicture = useCallback(async () => {
     if (!cameraRef.current || isProcessing) {
@@ -67,9 +64,20 @@ const CameraScreen: React.FC = () => {
 
     setIsProcessing(true);
     try {
-      const photo: TakePictureResponse = await cameraRef.current.takePictureAsync({
-        quality: 0.8,
-        base64: false,
+      const photo: PhotoFile | undefined = await cameraRef.current.takePhoto({
+        qualityPrioritization: 'quality',
+        flash: 'auto',
+        skipMetadata: true,
+      });
+
+      if (!photo?.path) {
+        throw new Error('Не вдалося зробити знімок');
+      }
+
+      const photoUri = Platform.select({
+        android: `file://${photo.path}`,
+        ios: photo.path,
+        default: photo.path,
       });
 
       // Проверка что ML Kit доступна
@@ -77,7 +85,7 @@ const CameraScreen: React.FC = () => {
         throw new Error('ML Kit TextRecognition is not available on this device');
       }
 
-      const result = await TextRecognition.recognize(photo.uri);
+      const result = await TextRecognition.recognize(photoUri);
       const reading = parseReading(result.text);
 
       if (!reading) {
@@ -90,11 +98,11 @@ const CameraScreen: React.FC = () => {
 
       navigation.navigate('Home', {
         recognizedValue: reading,
-        photoUri: photo.uri,
+        photoUri,
       });
     } catch (error) {
       console.error('Failed to process image', error);
-      const errorMessage = (error as Error).message || 'Unknown error';
+      const errorMessage = (error as CameraCaptureError | Error)?.message || 'Unknown error';
       
       // Специальная обработка для разных типов ошибок
       if (errorMessage.includes('ML Kit') || errorMessage.includes('not available')) {
@@ -144,28 +152,27 @@ const CameraScreen: React.FC = () => {
   if (!hasPermission) {
     return (
       <View style={styles.centered}>
-        <Text style={styles.deniedText}>Очікування дозволу камери...</Text>
+        <Text style={styles.deniedText}>Доступ до камери відсутній.</Text>
+      </View>
+    );
+  }
+
+  if (!device) {
+    return (
+      <View style={styles.centered}>
+        <Text style={styles.deniedText}>Завантаження камери...</Text>
       </View>
     );
   }
 
   return (
     <View style={styles.container}>
-      <RNCamera
-        ref={ref => {
-          cameraRef.current = ref;
-        }}
+      <Camera
+        ref={cameraRef}
         style={styles.camera}
-        captureAudio={false}
-        type={RNCamera.Constants.Type.back}
-        flashMode={RNCamera.Constants.FlashMode.auto}
-        androidCameraPermissionOptions={{
-          title: 'Доступ до камери',
-          message:
-            'Додаток використовує камеру для зчитування показів лічильника',
-          buttonPositive: 'Дозволити',
-          buttonNegative: 'Відмовитися',
-        }}
+        device={device}
+        isActive={isFocused && hasPermission && !isProcessing}
+        photo
       />
       {overlay}
     </View>

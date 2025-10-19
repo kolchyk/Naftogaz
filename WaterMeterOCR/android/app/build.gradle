@@ -66,7 +66,7 @@ android {
 
     defaultConfig {
         applicationId "com.watermeterocr"
-        minSdk rootProject.ext.minSdkVersion
+        minSdk Math.max(rootProject.ext.minSdkVersion, 21)
         targetSdk rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
@@ -125,13 +125,11 @@ dependencies {
     }
 
     // Google ML Kit Text Recognition (latest stable)
-    // Note: v16.0.0 is the latest available stable version
-    // Deprecated API warnings are non-critical and handled by the wrapper
-    implementation("com.google.mlkit:text-recognition:16.0.0")
+    implementation("com.google.mlkit:text-recognition:16.0.1")
     
     // Native modules
     implementation(project(":react-native-ml-kit_text-recognition"))
-    implementation(project(":react-native-camera"))
+    implementation(project(":react-native-vision-camera"))
     implementation(project(":react-native-safe-area-context"))
     implementation(project(":react-native-screens"))
 }

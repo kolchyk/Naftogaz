@@ -27,12 +27,12 @@ include(":app")
 include(":react-native-ml-kit_text-recognition")
 project(":react-native-ml-kit_text-recognition").projectDir = new File(rootDir, "../node_modules/@react-native-ml-kit/text-recognition/android")
 
-include(":react-native-camera")
-project(":react-native-camera").projectDir = new File(rootDir, "../node_modules/react-native-camera/android")
-
 include(":react-native-safe-area-context")
 project(":react-native-safe-area-context").projectDir = new File(rootDir, "../node_modules/react-native-safe-area-context/android")
 
 include(":react-native-screens")
 project(":react-native-screens").projectDir = new File(rootDir, "../node_modules/react-native-screens/android")
+
+include(":react-native-vision-camera")
+project(":react-native-vision-camera").projectDir = new File(rootDir, "../node_modules/react-native-vision-camera/android")
 
