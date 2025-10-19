@@ -14,18 +14,11 @@ class MainActivity : ReactActivity() {
   override fun getMainComponentName(): String = "WaterMeterOCR"
 
   /**
-   * Returns the instance of the [ReactActivityDelegate]. We use a safer version that
-   * gracefully handles the absence of New Architecture native libraries.
+   * Returns the instance of the [ReactActivityDelegate]. We use a minimal delegate
+   * that avoids loading New Architecture components when they're disabled.
    */
   override fun createReactActivityDelegate(): ReactActivityDelegate {
-    try {
-      // Try to use the default delegate (which may load New Architecture)
-      Log.d("MainActivity", "Creating DefaultReactActivityDelegate")
-      return DefaultReactActivityDelegate(this, mainComponentName, false)
-    } catch (e: Exception) {
-      // If that fails, use a minimal delegate
-      Log.e("MainActivity", "Failed to create DefaultReactActivityDelegate, using fallback", e)
-      return DefaultReactActivityDelegate(this, mainComponentName, false)
-    }
+    Log.d("MainActivity", "Creating ReactActivityDelegate (NewArch disabled)")
+    return DefaultReactActivityDelegate(this, mainComponentName, false)
   }
 }

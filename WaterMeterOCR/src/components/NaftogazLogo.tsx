@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
-import {palette} from '@/theme/colors';
+import {palette} from '../theme/colors';
 
 type Props = {
   size?: number;

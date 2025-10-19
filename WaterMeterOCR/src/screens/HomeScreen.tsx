@@ -1,8 +1,7 @@
-import React, {useMemo} from 'react';
+import React, {useMemo, useState} from 'react';
 import {
   Image,
   SafeAreaView,
-  StatusBar,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -12,15 +11,17 @@ import {useNavigation, useRoute} from '@react-navigation/native';
 import type {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import type {RouteProp} from '@react-navigation/native';
 
-import OCRResultCard from '@/components/OCRResultCard';
-import NaftogazLogo from '@/components/NaftogazLogo';
-import type {RootStackParamList} from '@/navigation';
-import {theme} from '@/theme/colors';
+import OCRResultCard from '../components/OCRResultCard';
+import NaftogazLogo from '../components/NaftogazLogo';
+import ResultModal from '../components/ResultModal';
+import type {RootStackParamList} from '../navigation';
+import {theme} from '../theme/colors';
 
 const HomeScreen: React.FC = () => {
   const navigation =
     useNavigation<NativeStackNavigationProp<RootStackParamList>>();
   const route = useRoute<RouteProp<RootStackParamList, 'Home'>>();
+  const [showModal, setShowModal] = useState(false);
 
   const recognizedValue = useMemo(
     () => route.params?.recognizedValue ?? null,
@@ -32,9 +33,15 @@ const HomeScreen: React.FC = () => {
     [route.params?.photoUri],
   );
 
+  // Показываем модальное окно при получении результата
+  React.useEffect(() => {
+    if (recognizedValue && photoUri) {
+      setShowModal(true);
+    }
+  }, [recognizedValue, photoUri]);
+
   return (
     <SafeAreaView style={styles.safeArea}>
-      <StatusBar barStyle="dark-content" backgroundColor={theme.background} />
       <View style={styles.container}>
         <View style={styles.header}>
           <Text style={styles.brand}>Gaz OCR</Text>
@@ -47,10 +54,10 @@ const HomeScreen: React.FC = () => {
           <View style={styles.logoWrapper}>
             <NaftogazLogo size={80} />
           </View>
-          <Text style={styles.heroTitle}>Identify Meter Reading:</Text>
+          <Text style={styles.heroTitle}>Розпізнавання показників лічильника:</Text>
           <Text style={styles.heroSubtitle}>
-            Capture a clear photo of your gas meter to extract the current
-            reading automatically.
+            Зробіть чітке фото газового лічильника для автоматичного розпізнавання 
+            поточних показників (6 цифр).
           </Text>
           <View
             style={[
@@ -65,7 +72,7 @@ const HomeScreen: React.FC = () => {
                   <Text style={styles.placeholderBadgeText}>PNG</Text>
                 </View>
                 <Text style={styles.previewPlaceholderText}>
-                  No photo captured yet
+                  Фото ще не зроблено
                 </Text>
               </View>
             )}
@@ -73,11 +80,21 @@ const HomeScreen: React.FC = () => {
           <TouchableOpacity
             style={styles.primaryButton}
             onPress={() => navigation.navigate('Camera')}>
-            <Text style={styles.primaryButtonText}>Identify Meter Reading</Text>
+            <Text style={styles.primaryButtonText}>Розпізнати показники лічильника</Text>
           </TouchableOpacity>
         </View>
 
-        <OCRResultCard value={recognizedValue} />
+        <OCRResultCard 
+          value={recognizedValue} 
+          onShowResult={() => setShowModal(true)}
+        />
+
+        <ResultModal
+          visible={showModal}
+          value={recognizedValue}
+          photoUri={photoUri}
+          onClose={() => setShowModal(false)}
+        />
       </View>
     </SafeAreaView>
   );

@@ -1,28 +1,34 @@
 import React from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 
-import {theme} from '@/theme/colors';
+import {theme} from '../theme/colors';
 
 type Props = {
   value: string | null;
+  onShowResult?: () => void;
 };
 
-const OCRResultCard: React.FC<Props> = ({value}) => {
+const OCRResultCard: React.FC<Props> = ({value, onShowResult}) => {
   const hasValue = Boolean(value);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>Result</Text>
+      <Text style={styles.label}>Результат розпізнавання</Text>
       <View style={styles.valueContainer}>
         <Text style={[styles.value, !hasValue && styles.placeholderValue]}>
-          {hasValue ? value : 'No reading yet'}
+          {hasValue ? value : 'Показники не розпізнані'}
         </Text>
       </View>
       <Text style={styles.caption}>
         {hasValue
-          ? 'Meter reading successfully detected.'
-          : 'Scan your gas meter to extract the digits.'}
+          ? `Показники газового лічильника успішно розпізнані: ${value}`
+          : 'Зробіть фото газового лічильника для розпізнавання 6 цифр.'}
       </Text>
+      {hasValue && onShowResult && (
+        <TouchableOpacity style={styles.showButton} onPress={onShowResult}>
+          <Text style={styles.showButtonText}>Показати деталі</Text>
+        </TouchableOpacity>
+      )}
     </View>
   );
 };
@@ -72,6 +78,19 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 20,
     textAlign: 'center',
+  },
+  showButton: {
+    marginTop: 16,
+    backgroundColor: theme.accent,
+    borderRadius: 12,
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    alignItems: 'center',
+  },
+  showButtonText: {
+    color: theme.onAccent,
+    fontSize: 14,
+    fontWeight: '600',
   },
 });
 

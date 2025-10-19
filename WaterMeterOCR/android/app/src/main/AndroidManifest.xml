@@ -11,8 +11,7 @@
       android:icon="@mipmap/ic_launcher"
       android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
-      android:theme="@style/AppTheme"
-      android:pageSizeCompat="enabled">
+      android:theme="@style/AppTheme">
       
       <!-- ML Kit Text Recognition dependency metadata -->
       <meta-data

@@ -18,16 +18,31 @@ import {
 } from 'react-native-vision-camera';
 import TextRecognition from '@react-native-ml-kit/text-recognition';
 
-import {theme} from '@/theme/colors';
-import type {RootStackParamList} from '@/navigation';
+import {theme} from '../theme/colors';
+import type {RootStackParamList} from '../navigation';
 
 const parseReading = (text: string) => {
-  const match = text.match(/\d+/g);
-  if (!match) {
-    return null;
+  // Извлекаем все цифры из текста
+  const digits = text.replace(/\D/g, '');
+  
+  // Ищем последовательность из 6 цифр
+  if (digits.length >= 6) {
+    // Берем первые 6 цифр
+    return digits.substring(0, 6);
   }
-  const numbers = match.map(item => item.trim()).join('');
-  return numbers.length > 0 ? numbers : null;
+  
+  // Если цифр меньше 6, но есть хотя бы 3, попробуем найти наиболее вероятную последовательность
+  if (digits.length >= 3) {
+    // Ищем группы цифр, которые могут быть показаниями счетчика
+    const groups = text.match(/\d{3,6}/g);
+    if (groups && groups.length > 0) {
+      // Берем самую длинную группу и обрезаем до 6 цифр
+      const longestGroup = groups.reduce((a, b) => a.length > b.length ? a : b);
+      return longestGroup.substring(0, 6);
+    }
+  }
+  
+  return null;
 };
 
 const CameraScreen: React.FC = () => {
@@ -65,9 +80,7 @@ const CameraScreen: React.FC = () => {
     setIsProcessing(true);
     try {
       const photo: PhotoFile | undefined = await cameraRef.current.takePhoto({
-        qualityPrioritization: 'quality',
         flash: 'auto',
-        skipMetadata: true,
       });
 
       if (!photo?.path) {
@@ -91,7 +104,7 @@ const CameraScreen: React.FC = () => {
       if (!reading) {
         Alert.alert(
           'Не вдалося розпізнати',
-          'Спробуйте знову, переконавшись, що цифри добре освітлені.',
+          'Не вдалося знайти 6 цифр на зображенні. Спробуйте знову, переконавшись, що цифри добре освітлені та чітко видимі.',
         );
         return;
       }
