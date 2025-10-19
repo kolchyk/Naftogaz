@@ -50,16 +50,18 @@ class MainApplication : Application(), ReactApplication {
       // Ошибка будет показана пользователю при попытке использования
     }
     
+    // Only load new architecture if explicitly enabled
     if (BuildConfig.IS_NEW_ARCHITECTURE_ENABLED) {
-      // If you opted-in for the New Architecture, we load the native entry point for this app.
       try {
+        Log.d("WaterMeterOCR", "Loading New Architecture...")
         load()
+        Log.d("WaterMeterOCR", "✓ New Architecture loaded successfully")
       } catch (e: Throwable) {
-        // Handle the case where the native library is not available
-        // For example, log the error or show a user-friendly message
-        Log.e("WaterMeterOCR", "Failed to load New Architecture", e)
-        e.printStackTrace()
+        Log.e("WaterMeterOCR", "Failed to load New Architecture (continuing with legacy)", e)
+        // Don't crash, use legacy architecture
       }
+    } else {
+      Log.d("WaterMeterOCR", "New Architecture is disabled, using legacy architecture")
     }
   }
 }

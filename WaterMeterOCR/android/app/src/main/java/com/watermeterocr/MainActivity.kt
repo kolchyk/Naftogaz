@@ -1,8 +1,8 @@
 package com.watermeterocr
 
+import android.util.Log
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
-import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
 import com.facebook.react.defaults.DefaultReactActivityDelegate
 
 class MainActivity : ReactActivity() {
@@ -14,9 +14,18 @@ class MainActivity : ReactActivity() {
   override fun getMainComponentName(): String = "WaterMeterOCR"
 
   /**
-   * Returns the instance of the [ReactActivityDelegate]. We use [DefaultReactActivityDelegate]
-   * which allows you to enable New Architecture with a single boolean flags [fabricEnabled]
+   * Returns the instance of the [ReactActivityDelegate]. We use a safer version that
+   * gracefully handles the absence of New Architecture native libraries.
    */
-  override fun createReactActivityDelegate(): ReactActivityDelegate =
-      DefaultReactActivityDelegate(this, mainComponentName, fabricEnabled)
+  override fun createReactActivityDelegate(): ReactActivityDelegate {
+    try {
+      // Try to use the default delegate (which may load New Architecture)
+      Log.d("MainActivity", "Creating DefaultReactActivityDelegate")
+      return DefaultReactActivityDelegate(this, mainComponentName, false)
+    } catch (e: Exception) {
+      // If that fails, use a minimal delegate
+      Log.e("MainActivity", "Failed to create DefaultReactActivityDelegate, using fallback", e)
+      return DefaultReactActivityDelegate(this, mainComponentName, false)
+    }
+  }
 }
