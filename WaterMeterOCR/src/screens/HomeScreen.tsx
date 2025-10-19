@@ -14,6 +14,7 @@ import type {RouteProp} from '@react-navigation/native';
 import OCRResultCard from '../components/OCRResultCard';
 import NaftogazLogo from '../components/NaftogazLogo';
 import ResultModal from '../components/ResultModal';
+import UkraineFlag from '../components/UkraineFlag';
 import type {RootStackParamList} from '../navigation';
 import {theme} from '../theme/colors';
 
@@ -44,7 +45,9 @@ const HomeScreen: React.FC = () => {
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
         <View style={styles.header}>
-          <Text style={styles.brand}>Gaz OCR</Text>
+          <View style={styles.brandContainer}>
+            <UkraineFlag size={24} />
+          </View>
           <View style={styles.closeButton}>
             <Text style={styles.closeLabel}>×</Text>
           </View>
@@ -116,10 +119,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingVertical: 16,
   },
-  brand: {
-    fontSize: 22,
-    fontWeight: '700',
-    color: theme.textPrimary,
+  brandContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   closeButton: {
     width: 36,

@@ -15,6 +15,7 @@ import com.th3rdwave.safeareacontext.SafeAreaContextPackage
 import com.swmansion.rnscreens.RNScreensPackage
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.GoogleApiAvailability
+import com.facebook.react.shell.MainReactPackage
 
 class MainApplication : Application(), ReactApplication {
 
@@ -22,6 +23,7 @@ class MainApplication : Application(), ReactApplication {
       object : DefaultReactNativeHost(this) {
         override fun getPackages(): List<ReactPackage> =
             listOf(
+              MainReactPackage(),
               TextRecognitionPackage(),
               CameraPackage(),
               SafeAreaContextPackage(),

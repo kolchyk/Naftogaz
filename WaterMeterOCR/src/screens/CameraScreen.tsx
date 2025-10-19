@@ -1,6 +1,7 @@
 import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import {
   Alert,
+  Linking,
   Platform,
   StyleSheet,
   Text,
@@ -51,6 +52,7 @@ const CameraScreen: React.FC = () => {
   const cameraRef = useRef<Camera | null>(null);
   const isFocused = useIsFocused();
   const [isProcessing, setIsProcessing] = useState(false);
+  const [isCameraReady, setIsCameraReady] = useState(false);
   const {hasPermission, requestPermission} = useCameraPermission();
   const device = useCameraDevice('back');
 
@@ -72,15 +74,78 @@ const CameraScreen: React.FC = () => {
     ensurePermission();
   }, [hasPermission, requestPermission]);
 
+  // Сброс состояния готовности камеры при потере фокуса
+  useEffect(() => {
+    if (!isFocused) {
+      setIsCameraReady(false);
+    }
+  }, [isFocused]);
+
   const handlePicture = useCallback(async () => {
     if (!cameraRef.current || isProcessing) {
       return;
     }
 
+    // Дополнительная проверка разрешений перед съемкой
+    if (!hasPermission) {
+      // Попытка повторно запросить разрешения
+      try {
+        const granted = await requestPermission();
+        if (!granted) {
+          Alert.alert(
+            'Немає доступу до камери',
+            'Дозвольте використання камери в налаштуваннях пристрою.',
+            [
+              {
+                text: 'Налаштування',
+                onPress: () => {
+                  try {
+                    Linking.openSettings();
+                  } catch (e) {
+                    console.warn('Cannot open settings:', e);
+                  }
+                },
+              },
+              {text: 'OK', style: 'default'},
+            ],
+          );
+          return;
+        }
+      } catch (error) {
+        console.warn('Permission request failed:', error);
+        Alert.alert(
+          'Помилка',
+          'Не вдалося отримати доступ до камери.',
+        );
+        return;
+      }
+    }
+
+    // Проверяем, что камера активна и готова к съемке
+    if (!isFocused || !device || !isCameraReady) {
+      Alert.alert('Помилка', 'Камера не готова до використання.');
+      return;
+    }
+
+    // Дополнительная проверка состояния камеры
+    if (!cameraRef.current) {
+      Alert.alert('Помилка', 'Камера не ініціалізована.');
+      return;
+    }
+
     setIsProcessing(true);
     try {
+      // Добавляем задержку для стабилизации камеры
+      await new Promise<void>(resolve => setTimeout(resolve, 200));
+      
+      // Проверяем, что камера все еще активна после задержки
+      if (!isFocused || !device) {
+        throw new Error('Камера стала неактивною під час підготовки');
+      }
+
       const photo: PhotoFile | undefined = await cameraRef.current.takePhoto({
-        flash: 'auto',
+        flash: device.hasFlash ? 'auto' : 'off',
+        enableShutterSound: true,
       });
 
       if (!photo?.path) {
@@ -118,23 +183,47 @@ const CameraScreen: React.FC = () => {
       const errorMessage = (error as CameraCaptureError | Error)?.message || 'Unknown error';
       
       // Специальная обработка для разных типов ошибок
-      if (errorMessage.includes('ML Kit') || errorMessage.includes('not available')) {
+      if (errorMessage.includes('Camera is closed') || errorMessage.includes('camera is closed')) {
+        Alert.alert(
+          'Помилка камери',
+          'Камера була закрита під час зйомки. Спробуйте ще раз.',
+        );
+      } else if (errorMessage.includes('Failed to submit capture request') || errorMessage.includes('capture request')) {
+        Alert.alert(
+          'Помилка зйомки',
+          'Не вдалося відправити запит на зйомку. Переконайтесь, що камера не використовується іншим додатком.',
+        );
+      } else if (errorMessage.includes('ML Kit') || errorMessage.includes('not available')) {
         Alert.alert(
           'Помилка',
           'ML Kit текст-розпізнавання недоступна на цьому пристрої. Переконайтесь, що встановлені Google Play Services.',
         );
-      } else if (errorMessage.includes('Camera') || errorMessage.includes('permission')) {
+      } else if (errorMessage.includes('Camera') || errorMessage.includes('permission') || errorMessage.includes('Permission')) {
         Alert.alert(
           'Помилка камери',
-          'Не вдалося отримати доступ до камери. Перевірте дозволи.',
+          'Не вдалося отримати доступ до камери. Перевірте дозволи в налаштуваннях пристрою.',
+          [
+            {
+              text: 'Налаштування',
+              onPress: () => {
+                // Открыть настройки приложения
+                try {
+                  Linking.openSettings();
+                } catch (e) {
+                  console.warn('Cannot open settings:', e);
+                }
+              },
+            },
+            {text: 'OK', style: 'default'},
+          ],
         );
       } else {
-        Alert.alert('Помилка', 'Не вдалося обробити зображення.');
+        Alert.alert('Помилка', `Не вдалося обробити зображення: ${errorMessage}`);
       }
     } finally {
       setIsProcessing(false);
     }
-  }, [isProcessing, navigation]);
+  }, [isProcessing, navigation, hasPermission, requestPermission, isFocused, device, isCameraReady]);
 
   const overlay = useMemo(
     () => (
@@ -154,7 +243,10 @@ const CameraScreen: React.FC = () => {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.cancelButton}
-          onPress={() => navigation.goBack()}>
+          onPress={() => {
+            console.log('Cancel button pressed');
+            navigation.goBack();
+          }}>
           <Text style={styles.cancelText}>Скасувати</Text>
         </TouchableOpacity>
       </View>
@@ -186,6 +278,16 @@ const CameraScreen: React.FC = () => {
         device={device}
         isActive={isFocused && hasPermission && !isProcessing}
         photo
+        enableZoomGesture={true}
+        enablePortraitEffectsMatteDelivery={false}
+        onError={(error) => {
+          console.error('Camera error:', error);
+          Alert.alert('Помилка камери', 'Сталася помилка з камерою. Спробуйте перезапустити додаток.');
+        }}
+        onInitialized={() => {
+          console.log('Camera initialized successfully');
+          setIsCameraReady(true);
+        }}
       />
       {overlay}
     </View>
@@ -249,9 +351,11 @@ const styles = StyleSheet.create({
   },
   cancelButton: {
     alignSelf: 'center',
+    paddingVertical: 8,
+    paddingHorizontal: 16,
   },
   cancelText: {
-    color: theme.background,
+    color: '#ffffff',
     fontSize: 15,
     fontWeight: '500',
   },

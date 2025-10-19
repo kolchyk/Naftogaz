@@ -13,8 +13,8 @@ const NaftogazLogo: React.FC<Props> = ({size = 120}) => (
       styles.container,
       {width: size, height: size, borderRadius: size / 5, paddingVertical: size / 8},
     ]}>
-    <Text style={[styles.mark, {fontSize: size / 3}]}>Gaz</Text>
-    <Text style={[styles.tagline, {fontSize: size / 7, marginTop: size / 20}]}>Meter OCR</Text>
+    <Text style={[styles.mark, {fontSize: size / 4}]}>Нафтогаз</Text>
+    <Text style={[styles.tagline, {fontSize: size / 8, marginTop: size / 20}]}>України</Text>
   </View>
 );
 
